@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TJH Design System — Living Foundation & Showcase</title>
+  <meta name="description" content="Design system specification, tokens, and AI prompt recipes built on #1657a7 Sapphire Blue." />
+  <link rel="stylesheet" href="./preview.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <span>TJH Design System v1.0 Foundations Live</span>
+    <a href="#llm-prompts">Explore AI Prompts &rarr;</a>
+  </div>
+
+  <!-- Primary Navigation -->
+  <header class="navbar">
+    <div class="container">
+      <div class="navbar-inner">
+        <a href="#" class="brand-logo">
+          <div class="brand-mark">T</div>
+          <span>TJH<span style="color: var(--color-sapphire);">.</span>DS</span>
+        </a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#colors" class="nav-link">Colors</a></li>
+            <li><a href="#typography" class="nav-link">Typography</a></li>
+            <li><a href="#components" class="nav-link">Components</a></li>
+            <li><a href="#llm-prompts" class="nav-link">AI Prompts</a></li>
+          </ul>
+        </nav>
+        <div style="display: flex; gap: 8px;">
+          <button class="btn btn-secondary btn-sm" id="btn-copy-tokens">Copy Tokens</button>
+          <a href="#components" class="btn btn-primary btn-sm btn-pill">Explore UI</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-badge">
+        <span style="width: 6px; height: 6px; border-radius: 50%; background-color: var(--color-sapphire);"></span>
+        Precision Workbench Meets Warm Clarity
+      </div>
+      <h1 class="hero-title">Build High-Trust Digital Experiences with TJH.</h1>
+      <p class="hero-subtext">
+        A clinical enterprise design system anchored by <strong>#1657a7 Sapphire Blue</strong>, engineered typography, and zero "vibe-coded" AI slop.
+      </p>
+      <div class="hero-actions">
+        <a href="#components" class="btn btn-primary btn-pill">View Components</a>
+        <a href="../DESIGN.md" class="btn btn-secondary btn-pill">Read DESIGN.md</a>
+      </div>
+
+      <!-- Email Capture Pattern -->
+      <div class="input-group">
+        <input type="email" class="input-text" placeholder="Enter your work email..." aria-label="Work Email" />
+        <button class="btn btn-primary btn-pill">Get Started</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Stats Strip -->
+  <section style="border-bottom: 1px solid var(--color-mist); background-color: var(--color-paper); padding: var(--spacing-48) 0;">
+    <div class="container">
+      <div class="grid-3">
+        <div class="stat-card">
+          <div class="stat-value">5.38:1</div>
+          <div class="stat-label">Accessible Contrast Ratio</div>
+          <div class="stat-desc">WCAG AA compliance for #1657a7 on pure white</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">12px / Pill</div>
+          <div class="stat-label">Engineered Radii</div>
+          <div class="stat-desc">Consistent tactile hierarchy across controls</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">0%</div>
+          <div class="stat-label">AI-Slop & Purple Glows</div>
+          <div class="stat-desc">Achromatic clarity with purposeful single ember</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Colors Section -->
+  <section id="colors" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Color System</div>
+        <h2 class="section-title">Harmonious Sapphire Palette</h2>
+        <p class="section-desc">Click any swatch to copy its exact hex code or CSS variable name directly to your clipboard.</p>
+      </div>
+
+      <!-- Primary Swatches -->
+      <h3 style="font-size: 18px; font-weight: 600; margin-bottom: var(--spacing-16); color: var(--color-ink);">Primary Brand & Accents</h3>
+      <div class="grid-swatches" style="margin-bottom: var(--spacing-32);">
+        <div class="swatch-card" data-hex="#1657a7" data-token="--color-sapphire">
+          <div class="swatch-color" style="background-color: #1657a7;"></div>
+          <div class="swatch-name">Sapphire Blue (Brand)</div>
+          <div class="swatch-role">Primary Action / Focus / Links</div>
+          <div class="swatch-token"><span>#1657a7</span><span>--color-sapphire</span></div>
+        </div>
+
+        <div class="swatch-card" data-hex="#0d386c" data-token="--color-sapphire-deep">
+          <div class="swatch-color" style="background-color: #0d386c;"></div>
+          <div class="swatch-name">Deep Sapphire</div>
+          <div class="swatch-role">Hover & Active State</div>
+          <div class="swatch-token"><span>#0d386c</span><span>--color-sapphire-deep</span></div>
+        </div>
+
+        <div class="swatch-card" data-hex="#2d7ee8" data-token="--color-azure">
+          <div class="swatch-color" style="background-color: #2d7ee8;"></div>
+          <div class="swatch-name">Azure Highlight</div>
+          <div class="swatch-role">Focus Rings / Highlight</div>
+          <div class="swatch-token"><span>#2d7ee8</span><span>--color-azure</span></div>
+        </div>
+
+        <div class="swatch-card" data-hex="#edf4fc" data-token="--color-glacier">
+          <div class="swatch-color" style="background-color: #edf4fc; border: 1px solid var(--color-mist);"></div>
+          <div class="swatch-name">Glacier Wash</div>
+          <div class="swatch-role">Icon Plates & Pill Tints</div>
+          <div class="swatch-token"><span>#edf4fc</span><span>--color-glacier</span></div>
+        </div>
+      </div>
+
+      <!-- Neutrals Swatches -->
+      <h3 style="font-size: 18px; font-weight: 600; margin-bottom: var(--spacing-16); color: var(--color-ink);">Neutrals & Surfaces</h3>
+      <div class="grid-swatches">
+        <div class="swatch-card" data-hex="#060d17" data-token="--color-abyss">
+          <div class="swatch-color" style="background-color: #060d17;"></div>
+          <div class="swatch-name">Abyss Dark</div>
+          <div class="swatch-role">Footer & Deep Bookends</div>
+          <div class="swatch-token"><span>#060d17</span><span>--color-abyss</span></div>
+        </div>
+
+        <div class="swatch-card" data-hex="#0f172a" data-token="--color-ink">
+          <div class="swatch-color" style="background-color: #0f172a;"></div>
+          <div class="swatch-name">Ink Charcoal</div>
+          <div class="swatch-role">Primary Headings & Text</div>
+          <div class="swatch-token"><span>#0f172a</span><span>--color-ink</span></div>
+        </div>
+
+        <div class="swatch-card" data-hex="#475569" data-token="--color-slate">
+          <div class="swatch-color" style="background-color: #475569;"></div>
+          <div class="swatch-name">Slate Gray</div>
+          <div class="swatch-role">Secondary Body Copy</div>
+          <div class="swatch-token"><span>#475569</span><span>--color-slate</span></div>
+        </div>
+
+        <div class="swatch-card" data-hex="#e2e8f0" data-token="--color-mist">
+          <div class="swatch-color" style="background-color: #e2e8f0; border: 1px solid #cbd5e1;"></div>
+          <div class="swatch-name">Mist Hairline</div>
+          <div class="swatch-role">1px Container Borders</div>
+          <div class="swatch-token"><span>#e2e8f0</span><span>--color-mist</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Typography Section -->
+  <section id="typography" class="section" style="background-color: var(--color-paper); border-top: 1px solid var(--color-mist); border-bottom: 1px solid var(--color-mist);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Typography Scale</div>
+        <h2 class="section-title">Inter Engineering & Negative Tracking</h2>
+        <p class="section-desc">Engineered display headlines compressed at -0.03em paired with readable 16px body copy.</p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: var(--spacing-24);">
+        <div style="border-bottom: 1px solid var(--color-mist); padding-bottom: var(--spacing-16);">
+          <div style="font-family: var(--font-mono); font-size: 11px; color: var(--color-steel); margin-bottom: 4px;">--text-display-xl (64px / 700 / -0.035em)</div>
+          <div style="font-size: 56px; font-weight: 700; line-height: 1.05; letter-spacing: -0.035em; color: var(--color-ink);">Executive Career Discovery</div>
+        </div>
+
+        <div style="border-bottom: 1px solid var(--color-mist); padding-bottom: var(--spacing-16);">
+          <div style="font-family: var(--font-mono); font-size: 11px; color: var(--color-steel); margin-bottom: 4px;">--text-heading-lg (40px / 600 / -0.025em)</div>
+          <div style="font-size: 36px; font-weight: 600; line-height: 1.18; letter-spacing: -0.025em; color: var(--color-ink);">Precision Match Engine</div>
+        </div>
+
+        <div style="border-bottom: 1px solid var(--color-mist); padding-bottom: var(--spacing-16);">
+          <div style="font-family: var(--font-mono); font-size: 11px; color: var(--color-steel); margin-bottom: 4px;">--text-heading-sm (24px / 600 / -0.015em)</div>
+          <div style="font-size: 24px; font-weight: 600; line-height: 1.30; letter-spacing: -0.015em; color: var(--color-ink);">Strategic Resume Optimization</div>
+        </div>
+
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 11px; color: var(--color-steel); margin-bottom: 4px;">--text-body (16px / 400 / +0.005em)</div>
+          <div style="font-size: 16px; font-weight: 400; line-height: 1.55; color: var(--color-slate); max-width: 720px;">
+            Every candidate receives customized interview strategy frameworks tailored specifically to ATS scoring heuristics and recruiter indexing metrics.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Components Section -->
+  <section id="components" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Component Sandbox</div>
+        <h2 class="section-title">Tested UI Patterns</h2>
+        <p class="section-desc">Interactive building blocks styled exclusively with TJH tokens.</p>
+      </div>
+
+      <!-- Feature Cards Grid -->
+      <div class="grid-3" style="margin-bottom: var(--spacing-48);">
+        <div class="feature-card">
+          <div class="feature-icon-plate">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </div>
+          <h3 class="feature-title">Tailored Resume Sourcing</h3>
+          <p class="feature-text">High-impact keyword calibration matching recruiter search queries across enterprise ATS portals.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-plate">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="feature-title">Recruiter Indexing</h3>
+          <p class="feature-text">Optimize LinkedIn profiles for top 3 search rank placement in target executive searches.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-plate">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+          </div>
+          <h3 class="feature-title">Interview Coaching</h3>
+          <p class="feature-text">Structured 3-session framework tackling behavioral, situational, and technical panel formats.</p>
+        </div>
+      </div>
+
+      <!-- Button Matrix -->
+      <div class="feature-card" style="margin-bottom: var(--spacing-48);">
+        <h3 style="font-size: 18px; font-weight: 600; margin-bottom: var(--spacing-16);">Button Hierarchy & States</h3>
+        <div style="display: flex; gap: var(--spacing-16); flex-wrap: wrap; align-items: center;">
+          <button class="btn btn-primary">Primary 12px</button>
+          <button class="btn btn-primary btn-pill">Primary Pill</button>
+          <button class="btn btn-secondary">Secondary Outlined</button>
+          <button class="btn btn-secondary btn-pill">Secondary Pill</button>
+          <span style="font-size: 14px; font-weight: 600; color: var(--color-sapphire); cursor: pointer; text-decoration: underline;">Ghost Link &rarr;</span>
+          <span style="padding: 4px 10px; background-color: var(--color-amber-ember-bg); color: var(--color-amber-ember); font-size: 11px; font-weight: 700; border-radius: 6px;">LIMITED SPOTS</span>
+          <span style="padding: 4px 10px; background-color: var(--color-success-bg); color: var(--color-success); font-size: 11px; font-weight: 700; border-radius: 6px;">VERIFIED</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LLM Prompts Section -->
+  <section id="llm-prompts" class="section" style="background-color: var(--color-paper); border-top: 1px solid var(--color-mist);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">AI Agent Recipes</div>
+        <h2 class="section-title">Ready-to-Use Prompts for LLMs</h2>
+        <p class="section-desc">Copy and paste these recipes directly into your Antigravity, Claude Code, or Cursor conversations.</p>
+      </div>
+
+      <!-- Prompt 1: Hero -->
+      <div class="prompt-card">
+        <div class="prompt-header">
+          <div class="prompt-title">1. Hero Section Recipe</div>
+          <button class="btn btn-secondary btn-sm btn-copy-prompt" data-target="code-hero">Copy Recipe</button>
+        </div>
+        <div id="code-hero" class="prompt-code">Build a hero section using TJH Design System:
+- Canvas background: #fafbfc, max-width 1200px.
+- Headline: 64px Inter weight 700, #0f172a, letter-spacing -0.035em, line-height 1.05.
+- Subtext: 18px Inter 400, #475569, max-width 640px.
+- Primary CTA: #1657a7 fill, #ffffff text, 12px radius, 12px 24px padding.
+- Secondary CTA: 1px #e2e8f0 border, #ffffff background, #0f172a text, 12px radius.</div>
+      </div>
+
+      <!-- Prompt 2: Feature Grid -->
+      <div class="prompt-card">
+        <div class="prompt-header">
+          <div class="prompt-title">2. 3-Column Feature Cards Recipe</div>
+          <button class="btn btn-secondary btn-sm btn-copy-prompt" data-target="code-features">Copy Recipe</button>
+        </div>
+        <div id="code-features" class="prompt-code">Build a 3-column feature section using TJH Design System:
+- Max-width 1200px, 80px section spacing.
+- Header: Centered 36px Inter 600 in #0f172a with 16px subtitle in #475569.
+- Cards: #ffffff fill, 16px radius, 1px solid #e2e8f0 border, 28px padding.
+- Card Icon: 48px square plate in #edf4fc with 10px radius, 24px #1657a7 icon.
+- Card Title: 20px Inter 600 in #0f172a. Body: 14px Inter 400 in #475569.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deep Abyss Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo" style="color: #ffffff;">
+            <div class="brand-mark">T</div>
+            <span>TJH<span style="color: var(--color-azure);">.</span>DS</span>
+          </div>
+          <p>The authoritative design system for The Job Helpers web applications and high-trust digital products.</p>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Foundations</div>
+          <ul class="footer-links">
+            <li><a href="#colors" class="footer-link">Color Tokens</a></li>
+            <li><a href="#typography" class="footer-link">Typography Scale</a></li>
+            <li><a href="../DESIGN.md" class="footer-link">Elevation & Radii</a></li>
+            <li><a href="../DESIGN.md" class="footer-link">Motion & Keyframes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Components</div>
+          <ul class="footer-links">
+            <li><a href="#components" class="footer-link">Buttons & Inputs</a></li>
+            <li><a href="#components" class="footer-link">Feature Panels</a></li>
+            <li><a href="#components" class="footer-link">Stat Strips</a></li>
+            <li><a href="#components" class="footer-link">Badges & Tags</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">AI Resources</div>
+          <ul class="footer-links">
+            <li><a href="../AGENTS.md" class="footer-link">AGENTS.md Spec</a></li>
+            <li><a href="#llm-prompts" class="footer-link">Prompt Recipes</a></li>
+            <li><a href="../tokens/tokens.json" class="footer-link">DTCG Tokens JSON</a></li>
+            <li><a href="../tokens/tokens.tailwind.css" class="footer-link">Tailwind Theme</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 The Job Helpers. All rights reserved.</div>
+        <div style="display: flex; gap: var(--spacing-24);">
+          <a href="../DESIGN.md" class="footer-link">Privacy Policy</a>
+          <a href="../DESIGN.md" class="footer-link">Terms of Service</a>
+          <a href="../DESIGN.md" class="footer-link">Security Baseline</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">Copied to clipboard!</div>
+
+  <script src="./preview.js"></script>
+</body>
+</html>
