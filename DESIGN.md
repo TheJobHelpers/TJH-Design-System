@@ -180,6 +180,11 @@
 - **Background:** `--color-abyss` (`#060d17`) or light canvas.
 - **Watermark Element:** Huge subdued brand wordmark rendered in faint contrast (`color: rgba(255, 255, 255, 0.04)` on dark or `rgba(15, 23, 42, 0.04)` on light) spanning the lower background width behind the copyright strip.
 
+### 10. Gradient Progress & Loading Bars (`progress-bar`)
+- **Track:** Height `6px` to `8px`, `--color-glacier` (`#ebf5ff`) fill, `9999px` pill border-radius, `overflow: hidden`.
+- **Bar Fill:** Default Canonical Gradient (`--gradient-default`: `linear-gradient(140deg, #3da2ff 0%, #1971d6 50%, #1657a7 100%)`).
+- **Thematic Variants:** Emerald (`--gradient-card-emerald`) for savings/positive thresholds; Amber (`--gradient-card-amber`) for budget limits.
+
 ---
 
 ## 06 — Border Radius & Elevation
