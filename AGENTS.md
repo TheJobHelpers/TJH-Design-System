@@ -46,6 +46,7 @@ Primary brand anchor: **`#1657a7`** (Sapphire Blue).
    - **Pricing Grids**: The Pro / Most Popular tier uses the Sapphire gradient fill, while Starter and Enterprise remain on white `#ffffff` cards.
 
 4. **No "Vibe-Coded" Clichés:**
+   - **No headline biscuit pills:** Never place a rounded biscuit/pill badge or bullet chip directly above main headlines (e.g. `• Next Gen Finance 2.0`). Headlines stand clean and unencumbered.
    - **No purple-on-dark:** Never inject violet, indigo, or purple gradients on dark containers.
    - **No emojis in UI:** Never use emojis in badges, headings, cards, or buttons. Use semantic SVG icons or plain text.
    - **No decorative filler icons:** Every icon must relate directly to what it represents.
