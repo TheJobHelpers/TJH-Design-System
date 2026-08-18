@@ -216,7 +216,40 @@
 
 ---
 
-## 07 — Prohibition of "The Vibe-Coded Look" (Anti-Slop Directives)
+## 07 — Motion & Animation Principles
+
+The TJH motion system is engineered for **instantaneous tactile responsiveness** without frivolous decoration.
+
+### Timing & Deceleration Curves
+
+| Token | Cubic-Bezier | Application |
+|---|---|---|
+| `--ease-snappy` | `cubic-bezier(0.16, 1, 0.3, 1)` | Primary interactive feedback (buttons, cards, focus rings) |
+| `--ease-smooth` | `cubic-bezier(0.4, 0, 0.2, 1)` | Structural surface movements (modals, sheets, accordions) |
+
+### Duration Hierarchy
+
+- **Micro (150ms):** Button hover lifts (`translateY(-1px)`), border color shifts, active press depression.
+- **Surface (250ms):** Spotlight glow opacity fades (`opacity: 1`), progress bar fill animations, toggle transitions.
+- **Structural (350ms):** Modal dialogues, slide-over panels, canopy height changes.
+
+### Card Interactive State: Mouse Pointer-Following Spotlight Corner Glow
+Instead of generic vertical translation lifts, cards feature a luminous **mouse pointer-following radial corner glow**:
+- The card sets `position: relative; overflow: hidden;`.
+- A pseudo-element `::before` renders a `420px` circle radial gradient anchored to `--mouse-x` and `--mouse-y` coordinates tracked on `mousemove`.
+- **Default / Non-Colored Cards:** Standard white paper cards (such as showcase and proof metrics) use a luminous **Sapphire Sky** (`#3da2ff` / `rgba(61, 162, 255, 0.18)`) spotlight halo.
+- **Thematic Multi-Colored Cards:** Thematic cards project their respective soft tint hue (Emerald, Azure, Sky, Amber, Slate).
+- On enter, the spotlight fades in briskly (`opacity: 1`, `transition: opacity 250ms var(--ease-snappy)`), and on leave it gently dissipates (`opacity: 0`, `transition: opacity 500ms var(--ease-smooth)`).
+- Content elements sit at `z-index: 2` above the luminous layer.
+
+### Motion Guardrails
+1. **Respect Reduced Motion:** Always pair animations with `@media (prefers-reduced-motion: reduce)`.
+2. **No Bouncy Cartoon Springs:** Avoid excessive bouncy overshoots on interactive UI.
+3. **No Looping Rotations:** Avoid continuously spinning decorative elements.
+
+---
+
+## 08 — Prohibition of "The Vibe-Coded Look" (Anti-Slop Directives)
 
 This design system strictly prohibits generic AI aesthetic tropes (the "vibe-coded look"). Any generated layout or component must comply with the following 10 zero-tolerance rules:
 
@@ -233,7 +266,7 @@ This design system strictly prohibits generic AI aesthetic tropes (the "vibe-cod
 
 ---
 
-## 08 — LLM Agent Prompting Recipes
+## 09 — LLM Agent Prompting Recipes
 
 ### Recipe 1: Saturated Sapphire Hero Canopy
 ```markdown
@@ -267,7 +300,7 @@ Build a 3-tier pricing section using the TJH Design System:
 
 ---
 
-## 09 — Known Gaps & Governance
+## 10 — Known Gaps & Governance
 
 The following components remain pending dedicated reference specifications:
 - Complex multi-level data tables with inline column filters
@@ -280,7 +313,7 @@ The following components remain pending dedicated reference specifications:
 
 ---
 
-## 10 — Accessibility & UI/UX Standards (WCAG 2.1 AA / 2.2 Compliant)
+## 11 — Accessibility & UI/UX Standards (WCAG 2.1 AA / 2.2 Compliant)
 
 | Category | Standard | System Requirement |
 |---|---|---|

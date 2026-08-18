@@ -217,12 +217,24 @@
   --shadow-modal: 0 24px 48px -12px rgba(15, 23, 42, 0.18), 0 8px 16px -4px rgba(15, 23, 42, 0.08);
 
   /* ==========================================================================
-     Transitions & Motion
+     Transitions & Motion System
      ========================================================================== */
-  --ease-snappy: cubic-bezier(0.16, 1, 0.3, 1);
-  --transition-fast: 150ms var(--ease-snappy);
-  --transition-normal: 200ms var(--ease-snappy);
-  --transition-slow: 300ms var(--ease-snappy);
+  --ease-snappy: cubic-bezier(0.16, 1, 0.3, 1);    /* High-energy entrance & UI feedback */
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);     /* Natural deceleration for modals/drawers */
+  --ease-bounce-subtle: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --duration-fast: 150ms;                          /* Micro-interactions, button hover, border colors */
+  --duration-normal: 250ms;                        /* Card lift, progress bars, switch toggles */
+  --duration-slow: 350ms;                          /* Modals, drawer expansion, canopy reveals */
+
+  --transition-fast: var(--duration-fast) var(--ease-snappy);
+  --transition-normal: var(--duration-normal) var(--ease-snappy);
+  --transition-slow: var(--duration-slow) var(--ease-smooth);
+
+  /* Animation Presets */
+  --animation-fade-in-up: fadeInUp 300ms var(--ease-snappy) forwards;
+  --animation-shimmer: shimmer 2s linear infinite;
+  --animation-float: floatSlow 4s ease-in-out infinite;
 
   /* ==========================================================================
      Accessibility & State Tokens (WCAG 2.1 AA / 2.2 Compliant)

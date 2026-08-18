@@ -70,5 +70,20 @@ document.addEventListener('DOMContentLoaded', () => {
       showToast('Switched to Saturated Multi-Gradient Palette');
     });
   }
+
+  // Mouse Pointer-Following Spotlight Glow Tracker with Smooth Fade In/Out
+  const glowCards = document.querySelectorAll('.feature-card, .showcase-card, .pricing-card');
+  glowCards.forEach(card => {
+    const updateGlow = (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      card.style.setProperty('--mouse-x', `${x}px`);
+      card.style.setProperty('--mouse-y', `${y}px`);
+    };
+
+    card.addEventListener('mouseenter', updateGlow);
+    card.addEventListener('mousemove', updateGlow);
+  });
 });
 
