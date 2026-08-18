@@ -29,6 +29,7 @@ Primary brand anchor: **`#1657a7`** (Sapphire Blue).
 1. **Quote Exact Hex Codes & Tokens:**
    - Primary Accent: `#1657a7` (`--color-sapphire`)
    - Hover / Active: `#0d386c` (`--color-sapphire-deep`)
+   - Sapphire Canopy Gradient: `linear-gradient(180deg, #1657a7 0%, #0d386c 100%)`
    - Dark Abyss Footer: `#060d17` (`--color-abyss`)
    - Text Ink: `#0f172a` (`--color-ink`)
    - Secondary Text Slate: `#475569` (`--color-slate`)
@@ -39,17 +40,19 @@ Primary brand anchor: **`#1657a7`** (Sapphire Blue).
 2. **Typography Rules:**
    - Display headlines (`display`, `display-xl`, `heading-lg`) **must** have negative tracking: `letter-spacing: -0.02em` to `-0.035em`.
    - Body copy (14px–16px) **must** have neutral or slight positive tracking (`0.005em` to `0.01em`).
-   - Headings **must** use **Title Case** (e.g. *"Accelerate Your Career"*, not *"Accelerate your career"*).
+   - Headings **must** use **Title Case** (e.g. *"Manage Every Dollar with Confidence"*, not *"Manage every dollar with confidence"*).
 
-3. **No "Vibe-Coded" Clichés:**
+3. **Canopy & Surface Rules:**
+   - **Hero Canopies**: When using the saturated Sapphire canopy (`--gradient-sapphire-canopy`), buttons invert to **White Filled Pill** (`#ffffff` fill, `#1657a7` text) paired with **Frosted Glass Pill** (`rgba(255, 255, 255, 0.15)` fill with `rgba(255, 255, 255, 0.3)` border).
+   - **Featured Cards**: In a multi-card grid, exactly one card may take the saturated `--gradient-featured-card` with white text and translucent icon plate. Sibling cards must remain on `#ffffff` Paper surface.
+   - **Pricing Grids**: The Pro / Most Popular tier uses the Sapphire gradient fill, while Starter and Enterprise remain on white `#ffffff` cards.
+
+4. **No "Vibe-Coded" Clichés:**
    - **No purple-on-dark:** Never inject violet, indigo, or purple gradients on dark containers.
    - **No emojis in UI:** Never use emojis in badges, headings, cards, or buttons. Use semantic SVG icons or plain text.
    - **No decorative filler icons:** Every icon must relate directly to what it represents.
-   - **No gradient keywords:** Headings must use solid Ink `#0f172a`.
+   - **No gradient keywords:** Headings must use solid Ink `#0f172a` or solid white `#ffffff` on canopy backgrounds.
    - **No heavy drop shadows:** Cards use 1px hairline borders (`#e2e8f0`) with featherlight soft elevation.
-
-4. **One Saturated Action per Region:**
-   - Never place two primary filled sapphire buttons side-by-side. Pair a primary sapphire button with a white outlined button or ghost text link.
 
 5. **Respect Known Gaps:**
    - If a requested pattern is listed in `DESIGN.md` under **Known Gaps**, explicitly note to the user that it is being designed as a new extension rather than claiming it was already in the foundational spec.

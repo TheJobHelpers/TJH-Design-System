@@ -15,13 +15,16 @@
       <div class="header-inner">
         <a href="#" class="brand-title">
           <div class="brand-mark">T</div>
-          <span>TJH Design System <span style="font-weight: 400; color: var(--color-slate); font-size: 13px;">v1.0</span></span>
+          <span>TJH Design System <span style="font-weight: 400; color: var(--color-slate); font-size: 13px;">v1.1</span></span>
         </a>
         <nav>
           <ul class="nav-links">
             <li><a href="#colors" class="nav-link">Colors</a></li>
             <li><a href="#typography" class="nav-link">Typography</a></li>
-            <li><a href="#components" class="nav-link">Components</a></li>
+            <li><a href="#canopy-pattern" class="nav-link">Canopy</a></li>
+            <li><a href="#feature-grid" class="nav-link">Grid Cards</a></li>
+            <li><a href="#product-showcase" class="nav-link">Showcase</a></li>
+            <li><a href="#pricing-section" class="nav-link">Pricing</a></li>
             <li><a href="#llm-prompts" class="nav-link">LLM Prompts</a></li>
           </ul>
         </nav>
@@ -36,9 +39,9 @@
   <!-- Technical Spec Summary Banner -->
   <section class="spec-banner">
     <div class="container">
-      <h1 class="spec-heading">System Foundations & Token Inspector</h1>
+      <h1 class="spec-heading">System Foundations & Component Workbench</h1>
       <p class="spec-sub">
-        Canonical design tokens and component specifications for The Job Helpers web ecosystem. Anchor brand accent: <strong>#1657a7</strong> (Sapphire Blue).
+        Canonical design tokens, canopy layout architectures, and interactive component specifications. Primary brand anchor: <strong>#1657a7</strong> (Sapphire Blue).
       </p>
 
       <div class="meta-grid">
@@ -55,14 +58,14 @@
           <div class="meta-item-value">-0.02em to -0.035em</div>
         </div>
         <div>
-          <div class="meta-item-label">Base Grid & Radii</div>
-          <div class="meta-item-value">4px grid · 12px & Pill radii</div>
+          <div class="meta-item-label">Layout Radii</div>
+          <div class="meta-item-value">12px · 16px · 28px Canopy · Pill</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Colors Section -->
+  <!-- 01: Colors Section -->
   <section id="colors" class="section">
     <div class="container">
       <div class="section-header">
@@ -72,7 +75,7 @@
       </div>
 
       <!-- Primary Brand Swatches -->
-      <h3 style="font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-slate); margin-bottom: var(--spacing-16);">Primary Brand & Accents</h3>
+      <h3 style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-slate); margin-bottom: var(--spacing-16);">Primary Brand & Accents</h3>
       <div class="grid-swatches" style="margin-bottom: var(--spacing-32);">
         <div class="swatch-card" data-hex="#1657a7" data-token="--color-sapphire">
           <div class="swatch-color" style="background-color: #1657a7;"></div>
@@ -84,7 +87,7 @@
         <div class="swatch-card" data-hex="#0d386c" data-token="--color-sapphire-deep">
           <div class="swatch-color" style="background-color: #0d386c;"></div>
           <div class="swatch-name">Deep Sapphire</div>
-          <div class="swatch-role">Hover & Active State</div>
+          <div class="swatch-role">Hover & Canopy Gradient</div>
           <div class="swatch-token"><span>#0d386c</span><span>--color-sapphire-deep</span></div>
         </div>
 
@@ -104,7 +107,7 @@
       </div>
 
       <!-- Neutrals Swatches -->
-      <h3 style="font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-slate); margin-bottom: var(--spacing-16);">Neutrals & Structural Surfaces</h3>
+      <h3 style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-slate); margin-bottom: var(--spacing-16);">Neutrals & Structural Surfaces</h3>
       <div class="grid-swatches" style="margin-bottom: var(--spacing-32);">
         <div class="swatch-card" data-hex="#060d17" data-token="--color-abyss">
           <div class="swatch-color" style="background-color: #060d17;"></div>
@@ -134,187 +137,424 @@
           <div class="swatch-token"><span>#e2e8f0</span><span>--color-mist</span></div>
         </div>
       </div>
-
-      <!-- Semantic Swatches -->
-      <h3 style="font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-slate); margin-bottom: var(--spacing-16);">Semantic & State Accents</h3>
-      <div class="grid-swatches">
-        <div class="swatch-card" data-hex="#059669" data-token="--color-success">
-          <div class="swatch-color" style="background-color: #059669;"></div>
-          <div class="swatch-name">Success</div>
-          <div class="swatch-role">Verified / Positive States</div>
-          <div class="swatch-token"><span>#059669</span><span>--color-success</span></div>
-        </div>
-
-        <div class="swatch-card" data-hex="#d97706" data-token="--color-warning">
-          <div class="swatch-color" style="background-color: #d97706;"></div>
-          <div class="swatch-name">Warning</div>
-          <div class="swatch-role">Caution / Pending</div>
-          <div class="swatch-token"><span>#d97706</span><span>--color-warning</span></div>
-        </div>
-
-        <div class="swatch-card" data-hex="#dc2626" data-token="--color-error">
-          <div class="swatch-color" style="background-color: #dc2626;"></div>
-          <div class="swatch-name">Error</div>
-          <div class="swatch-role">Validation / Destructive</div>
-          <div class="swatch-token"><span>#dc2626</span><span>--color-error</span></div>
-        </div>
-
-        <div class="swatch-card" data-hex="#e07a16" data-token="--color-amber-ember">
-          <div class="swatch-color" style="background-color: #e07a16;"></div>
-          <div class="swatch-name">Amber Ember</div>
-          <div class="swatch-role">Urgency Tags / Badges</div>
-          <div class="swatch-token"><span>#e07a16</span><span>--color-amber-ember</span></div>
-        </div>
-      </div>
     </div>
   </section>
 
-  <!-- Typography Section -->
+  <!-- 02: Typography Section -->
   <section id="typography" class="section" style="background-color: var(--color-paper);">
     <div class="container">
       <div class="section-header">
         <div class="section-tag">02 — Typography System</div>
         <h2 class="section-title">Inter Type Scale & Negative Tracking</h2>
-        <p class="section-desc">Negative tracking at display sizes compresses headlines for an engineered, confident feel.</p>
+        <p class="section-desc">Negative tracking at display sizes compresses headlines for an engineered, confident presence.</p>
       </div>
 
-      <div style="display: flex; flex-direction: column; gap: var(--spacing-24);">
+      <div style="display: flex; flex-direction: column; gap: var(--spacing-20);">
         <div style="border-bottom: 1px solid var(--color-mist); padding-bottom: var(--spacing-16);">
           <div style="font-family: var(--font-mono); font-size: 11px; color: var(--color-steel); margin-bottom: 4px;">--text-display-xl (clamp(40px, 6vw, 72px) · 700 · -0.035em)</div>
-          <div style="font-size: 48px; font-weight: 700; line-height: 1.05; letter-spacing: -0.035em; color: var(--color-ink);">Executive Career Discovery</div>
+          <div style="font-size: 44px; font-weight: 700; line-height: 1.05; letter-spacing: -0.035em; color: var(--color-ink);">Manage Every Dollar with Confidence</div>
         </div>
 
         <div style="border-bottom: 1px solid var(--color-mist); padding-bottom: var(--spacing-16);">
           <div style="font-family: var(--font-mono); font-size: 11px; color: var(--color-steel); margin-bottom: 4px;">--text-heading-lg (40px · 600 · -0.025em)</div>
-          <div style="font-size: 32px; font-weight: 600; line-height: 1.18; letter-spacing: -0.025em; color: var(--color-ink);">Strategic Resume Optimization</div>
-        </div>
-
-        <div style="border-bottom: 1px solid var(--color-mist); padding-bottom: var(--spacing-16);">
-          <div style="font-family: var(--font-mono); font-size: 11px; color: var(--color-steel); margin-bottom: 4px;">--text-heading-sm (24px · 600 · -0.015em)</div>
-          <div style="font-size: 22px; font-weight: 600; line-height: 1.30; letter-spacing: -0.015em; color: var(--color-ink);">Candidate Intelligence Pipeline</div>
+          <div style="font-size: 30px; font-weight: 600; line-height: 1.18; letter-spacing: -0.025em; color: var(--color-ink);">Powerful Features, Built for Everyday Finance</div>
         </div>
 
         <div>
           <div style="font-family: var(--font-mono); font-size: 11px; color: var(--color-steel); margin-bottom: 4px;">--text-body (16px · 400 · +0.005em)</div>
           <div style="font-size: 16px; font-weight: 400; line-height: 1.55; color: var(--color-slate); max-width: 720px;">
-            Structured interview coaching frameworks tackle behavioral, situational, and executive panel question formats with proven ATS keyword optimization.
+            The all-in-one financial workbench that gives you real-time visibility, automated money transfers, and precision wealth analytics without unnecessary friction.
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Components Section -->
-  <section id="components" class="section">
+  <!-- 03: Saturated Sapphire Hero Canopy Pattern -->
+  <section id="canopy-pattern" class="section">
     <div class="container">
       <div class="section-header">
-        <div class="section-tag">03 — Component Patterns</div>
-        <h2 class="section-title">Tested UI Elements & Containers</h2>
-        <p class="section-desc">Interactive building blocks styled strictly with the token variables.</p>
+        <div class="section-tag">03 — Canopy Pattern</div>
+        <h2 class="section-title">Sapphire Hero Canopy & Floating Widgets</h2>
+        <p class="section-desc">Saturated gradient shell with dual pill actions on blue and boundary-breaking floating UI mockups.</p>
       </div>
 
-      <!-- Button Hierarchy -->
-      <div class="feature-card" style="margin-bottom: var(--spacing-24);">
-        <h3 style="font-size: 16px; font-weight: 600; margin-bottom: var(--spacing-16);">1. Button Hierarchy & Badge Indicators</h3>
-        <div style="display: flex; gap: var(--spacing-12); flex-wrap: wrap; align-items: center;">
-          <button class="btn btn-primary">Primary 12px</button>
-          <button class="btn btn-primary btn-pill">Primary Pill</button>
-          <button class="btn btn-secondary">Secondary Outlined</button>
-          <button class="btn btn-secondary btn-pill">Secondary Pill</button>
-          <button class="btn btn-primary btn-sm">Small CTA</button>
-          <span style="font-size: 14px; font-weight: 600; color: var(--color-sapphire); cursor: pointer; text-decoration: underline; margin-left: 8px;">Ghost Link &rarr;</span>
-          <span style="padding: 4px 10px; background-color: var(--color-amber-ember-bg); color: var(--color-amber-ember); font-size: 11px; font-weight: 700; border-radius: var(--radius-tag);">LIMITED SPOTS</span>
-          <span style="padding: 4px 10px; background-color: var(--color-success-bg); color: var(--color-success); font-size: 11px; font-weight: 700; border-radius: var(--radius-tag);">VERIFIED</span>
+      <!-- Live Canopy Container -->
+      <div class="canopy-demo-container">
+        <div class="canopy-badge">
+          <span>&bull;</span> Next Gen Finance 2.0
+        </div>
+        <h2 class="canopy-title">Manage Every Dollar with Confidence</h2>
+        <p class="canopy-sub">
+          The ultimate financial command center built for modern teams and individuals who value speed, clarity, and control.
+        </p>
+        <div class="canopy-actions">
+          <button class="btn btn-white btn-pill">Get Started</button>
+          <button class="btn btn-glass btn-pill">Explore Features</button>
+        </div>
+
+        <!-- Overlapping Floating Widgets -->
+        <div class="floating-widgets-wrapper">
+          <div class="floating-widget">
+            <div class="widget-label">Total Balance</div>
+            <div class="widget-val">$124,590.00</div>
+            <div style="font-size: 12px; color: var(--color-success); margin-top: 4px; font-weight: 600;">&uarr; +14.2% this month</div>
+          </div>
+          <div class="floating-widget">
+            <div class="widget-label">Monthly Expenses</div>
+            <div class="widget-val">$4,872.50</div>
+            <div style="font-size: 12px; color: var(--color-slate); margin-top: 4px;">42 transactions</div>
+          </div>
+          <div class="floating-widget">
+            <div class="widget-label">Active Wallet Card</div>
+            <div class="widget-val" style="font-size: 16px; display: flex; align-items: center; gap: 6px;">
+              <span style="display:inline-block; width: 14px; height: 10px; background-color: var(--color-sapphire); border-radius: 2px;"></span>
+              &bull;&bull;&bull;&bull; 4821
+            </div>
+            <div style="font-size: 12px; color: var(--color-sapphire); margin-top: 6px; font-weight: 600;">Status: Verified</div>
+          </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Inputs & Form Controls -->
-      <div class="feature-card" style="margin-bottom: var(--spacing-24);">
-        <h3 style="font-size: 16px; font-weight: 600; margin-bottom: var(--spacing-16);">2. Form Input Controls</h3>
-        <div class="grid-2">
-          <div>
-            <label style="display: block; font-size: 12px; font-weight: 600; color: var(--color-slate); margin-bottom: 6px;">DEFAULT INPUT</label>
-            <input type="text" class="input-text" placeholder="e.g. Executive Product Manager" />
+  <!-- 04: Highlighted / Featured Grid Cards -->
+  <section id="feature-grid" class="section" style="background-color: var(--color-paper);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">04 — Feature Grid Pattern</div>
+        <h2 class="section-title">Why People Choose The Platform</h2>
+        <p class="section-desc">Demonstrates the 6-card grid with 1 Sapphire Featured Highlight card commanding visual hierarchy.</p>
+      </div>
+
+      <div class="grid-3">
+        <!-- Card 1: Standard -->
+        <div class="feature-card">
+          <div class="feature-icon-plate">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
-          <div>
-            <label style="display: block; font-size: 12px; font-weight: 600; color: var(--color-slate); margin-bottom: 6px;">ATTACHED ACTION</label>
-            <div style="display: flex; gap: 8px;">
-              <input type="email" class="input-text" placeholder="candidate@work.com" />
-              <button class="btn btn-primary">Submit</button>
+          <h3 class="feature-title">Bank-Grade Security</h3>
+          <p class="feature-text">256-bit encryption with multi-factor biometric authentication keeping your assets safe.</p>
+        </div>
+
+        <!-- Card 2: FEATURED / HIGHLIGHTED SAPPHIRE -->
+        <div class="feature-card-highlighted">
+          <div class="feature-icon-plate">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <h3 class="feature-title">AI Financial Assistance</h3>
+          <p class="feature-text">Automated budget forecasting, anomaly detection, and real-time smart expenditure recommendations.</p>
+        </div>
+
+        <!-- Card 3: Standard -->
+        <div class="feature-card">
+          <div class="feature-icon-plate">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3 class="feature-title">Without Hidden Fees</h3>
+          <p class="feature-text">Transparent fee architecture with zero surprise conversion rates or account maintenance fees.</p>
+        </div>
+
+        <!-- Card 4: Standard -->
+        <div class="feature-card">
+          <div class="feature-icon-plate">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3 class="feature-title">Global Payments</h3>
+          <p class="feature-text">Instantly transfer across 140+ currencies with institutional rate settlement and tracking.</p>
+        </div>
+
+        <!-- Card 5: Standard -->
+        <div class="feature-card">
+          <div class="feature-icon-plate">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3 class="feature-title">Real-Time Tracking</h3>
+          <p class="feature-text">Live telemetry feeds streaming transaction notifications directly to your phone and ledger.</p>
+        </div>
+
+        <!-- Card 6: Standard -->
+        <div class="feature-card">
+          <div class="feature-icon-plate">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+          </div>
+          <h3 class="feature-title">All-In-One Wallet</h3>
+          <p class="feature-text">Consolidate corporate accounts, physical cards, and digital assets into a single dashboard.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05: Human Proof & Bento Stat Block -->
+  <section id="proof-bento" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">05 — Proof Bento Pattern</div>
+        <h2 class="section-title">Built for Modern Scale</h2>
+        <p class="section-desc">Center human focus card overlapped by floating status pill, flanked by 4 quantitative metric cards.</p>
+      </div>
+
+      <div class="bento-proof-container">
+        <div class="bento-grid">
+          <!-- Left Column Metrics -->
+          <div style="display: flex; flex-direction: column; gap: var(--spacing-16);">
+            <div class="feature-card" style="text-align: center; padding: 20px;">
+              <div style="font-size: 36px; font-weight: 700; color: var(--color-sapphire); letter-spacing: -0.03em;">500K+</div>
+              <div style="font-size: 13px; font-weight: 600; color: var(--color-ink);">Active Global Accounts</div>
+            </div>
+            <div class="feature-card" style="text-align: center; padding: 20px;">
+              <div style="font-size: 36px; font-weight: 700; color: var(--color-sapphire); letter-spacing: -0.03em;">$2.6B</div>
+              <div style="font-size: 13px; font-weight: 600; color: var(--color-ink);">Quarterly Volume</div>
+            </div>
+          </div>
+
+          <!-- Center Column Human Focus Card -->
+          <div class="bento-photo-card">
+            <div style="text-align: center; padding: 20px;">
+              <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(255,255,255,0.2); margin: 0 auto 12px auto; display: flex; align-items: center; justify-content: center;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <div style="font-size: 16px; font-weight: 700;">Human-Centered Reliability</div>
+            </div>
+            <div class="bento-floating-pill">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span>Verified Direct Deposit</span>
+                <span style="font-weight: 700; color: var(--color-success);">+$4,250.00</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column Metrics -->
+          <div style="display: flex; flex-direction: column; gap: var(--spacing-16);">
+            <div class="feature-card" style="text-align: center; padding: 20px;">
+              <div style="font-size: 36px; font-weight: 700; color: var(--color-sapphire); letter-spacing: -0.03em;">4.9 / 5</div>
+              <div style="font-size: 13px; font-weight: 600; color: var(--color-ink);">Client Satisfaction</div>
+            </div>
+            <div class="feature-card" style="text-align: center; padding: 20px;">
+              <div style="font-size: 36px; font-weight: 700; color: var(--color-sapphire); letter-spacing: -0.03em;">120+</div>
+              <div style="font-size: 13px; font-weight: 600; color: var(--color-ink);">Supported Regions</div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Feature Panels -->
-      <div class="grid-3">
-        <div class="feature-card">
-          <div class="feature-icon-plate">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+  <!-- 06: Product Showcase 2x2 Grid -->
+  <section id="product-showcase" class="section" style="background-color: var(--color-paper);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">06 — Product Showcase Grid</div>
+        <h2 class="section-title">Powerful Features, Built for Everyday Finance</h2>
+        <p class="section-desc">2x2 grid pairing elevated interactive widget mockups with structural copy.</p>
+      </div>
+
+      <div class="grid-2">
+        <!-- Showcase Card 1 -->
+        <div class="showcase-card">
+          <div class="showcase-preview-plate">
+            <div style="background: #ffffff; padding: 16px 24px; border-radius: 12px; box-shadow: var(--shadow-card); border: 1px solid var(--color-mist); text-align: center; width: 80%;">
+              <div style="font-size: 11px; color: var(--color-slate); text-transform: uppercase; font-weight: 600;">Main Wallet Balance</div>
+              <div style="font-size: 24px; font-weight: 700; color: var(--color-ink); margin: 4px 0;">$32,480.00</div>
+              <div style="display: flex; gap: 8px; justify-content: center; margin-top: 10px;">
+                <span style="font-size: 11px; background: var(--color-sapphire); color: #fff; padding: 3px 8px; border-radius: 4px; font-weight: 600;">VISA</span>
+                <span style="font-size: 11px; background: var(--color-carbon); color: #fff; padding: 3px 8px; border-radius: 4px; font-weight: 600;">Apple Pay</span>
+              </div>
+            </div>
           </div>
-          <h3 class="feature-title">Resume Optimization</h3>
-          <p class="feature-text">High-impact keyword calibration matching recruiter search queries across enterprise ATS portals.</p>
+          <div class="showcase-info">
+            <h3 class="showcase-title">Smart Wallet Management</h3>
+            <p class="showcase-desc">Seamlessly link corporate cards, personal checking, and digital payment methods in a unified panel.</p>
+          </div>
         </div>
 
-        <div class="feature-card">
-          <div class="feature-icon-plate">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <!-- Showcase Card 2 -->
+        <div class="showcase-card">
+          <div class="showcase-preview-plate">
+            <div style="background: #ffffff; padding: 16px 20px; border-radius: 12px; box-shadow: var(--shadow-card); border: 1px solid var(--color-mist); width: 85%;">
+              <div style="display: flex; justify-content: space-between; align-items: center; font-size: 12px; margin-bottom: 8px;">
+                <span style="font-weight: 600;">Instant Transfer</span>
+                <span style="color: var(--color-success); font-weight: 700;">Completed</span>
+              </div>
+              <div style="font-size: 18px; font-weight: 700; color: var(--color-sapphire);">$1,250.00 &rarr; Client Ops</div>
+            </div>
           </div>
-          <h3 class="feature-title">Recruiter Indexing</h3>
-          <p class="feature-text">Optimize LinkedIn profiles for top search rank placement in target executive headhunting queries.</p>
+          <div class="showcase-info">
+            <h3 class="showcase-title">Instant Money Transfers</h3>
+            <p class="showcase-desc">Send and receive funds in seconds with zero latency and automatic reconciliation.</p>
+          </div>
         </div>
 
-        <div class="feature-card">
-          <div class="feature-icon-plate">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+        <!-- Showcase Card 3 -->
+        <div class="showcase-card">
+          <div class="showcase-preview-plate">
+            <div style="background: #ffffff; padding: 16px 20px; border-radius: 12px; box-shadow: var(--shadow-card); border: 1px solid var(--color-mist); width: 85%;">
+              <div style="font-size: 11px; font-weight: 600; color: var(--color-slate);">AI Spending Insights</div>
+              <div style="font-size: 20px; font-weight: 700; color: var(--color-ink); margin: 4px 0;">-$450 Saved</div>
+              <div style="height: 6px; background: var(--color-glacier); border-radius: 3px; overflow: hidden; margin-top: 8px;">
+                <div style="width: 70%; height: 100%; background: var(--color-sapphire);"></div>
+              </div>
+            </div>
           </div>
-          <h3 class="feature-title">Interview Coaching</h3>
-          <p class="feature-text">Structured 3-session framework tackling behavioral, situational, and technical panel formats.</p>
+          <div class="showcase-info">
+            <h3 class="showcase-title">AI Spending Insights</h3>
+            <p class="showcase-desc">Real-time expenditure classification and proactive anomaly detection to minimize overhead.</p>
+          </div>
+        </div>
+
+        <!-- Showcase Card 4 -->
+        <div class="showcase-card">
+          <div class="showcase-preview-plate">
+            <div style="background: #ffffff; padding: 16px 20px; border-radius: 12px; box-shadow: var(--shadow-card); border: 1px solid var(--color-mist); width: 85%;">
+              <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px; color: var(--color-slate); font-weight: 600;">
+                <span>Monthly Recurring</span>
+                <span style="color: var(--color-success);">+24.8%</span>
+              </div>
+              <div style="font-size: 22px; font-weight: 700; color: var(--color-ink); margin-top: 4px;">$8.21M</div>
+            </div>
+          </div>
+          <div class="showcase-info">
+            <h3 class="showcase-title">Real-Time Analytics</h3>
+            <p class="showcase-desc">Institutional-grade financial reporting with custom dashboard views and automated tax exports.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- LLM Prompts Section -->
+  <!-- 07: 3-Tier Pricing Component -->
+  <section id="pricing-section" class="section">
+    <div class="container">
+      <div class="section-header" style="text-align: center;">
+        <div class="section-tag">07 — Pricing Grid Pattern</div>
+        <h2 class="section-title">Simple Pricing for Everyone</h2>
+        <p class="section-desc" style="margin: 0 auto;">Transparent plan tiers featuring a Sapphire gradient highlighted Pro tier.</p>
+      </div>
+
+      <div class="grid-3" style="align-items: center;">
+        <!-- Starter Tier -->
+        <div class="pricing-card">
+          <div>
+            <div class="pricing-tier" style="color: var(--color-ink);">Starter</div>
+            <div class="pricing-price">$0 <span>/ month</span></div>
+            <ul class="pricing-features">
+              <li class="pricing-feature-item"><span style="color: var(--color-success);">&check;</span> Up to 3 Linked Accounts</li>
+              <li class="pricing-feature-item"><span style="color: var(--color-success);">&check;</span> Standard Transfer Speeds</li>
+              <li class="pricing-feature-item"><span style="color: var(--color-success);">&check;</span> Basic Spending Insights</li>
+              <li class="pricing-feature-item" style="color: var(--color-steel);">&bull; Real-time AI Alerts</li>
+            </ul>
+          </div>
+          <button class="btn btn-secondary btn-pill" style="width: 100%;">Get Started Free</button>
+        </div>
+
+        <!-- Pro Tier (FEATURED SAPPHIRE) -->
+        <div class="pricing-card pricing-card-featured">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <div class="pricing-tier" style="color: #ffffff;">Pro Plan</div>
+              <span style="padding: 3px 10px; background: rgba(255,255,255,0.2); border-radius: 9999px; font-size: 11px; font-weight: 700;">MOST POPULAR</span>
+            </div>
+            <div class="pricing-price" style="color: #ffffff;">$9 <span>/ month</span></div>
+            <ul class="pricing-features">
+              <li class="pricing-feature-item"><span>&check;</span> Unlimited Linked Accounts</li>
+              <li class="pricing-feature-item"><span>&check;</span> Instant Priority Transfers</li>
+              <li class="pricing-feature-item"><span>&check;</span> Predictive AI Budgeting</li>
+              <li class="pricing-feature-item"><span>&check;</span> Dedicated Account Lead</li>
+            </ul>
+          </div>
+          <button class="btn btn-white btn-pill" style="width: 100%;">Upgrade to Pro</button>
+        </div>
+
+        <!-- Enterprise Tier -->
+        <div class="pricing-card">
+          <div>
+            <div class="pricing-tier" style="color: var(--color-ink);">Enterprise</div>
+            <div class="pricing-price">$29 <span>/ month</span></div>
+            <ul class="pricing-features">
+              <li class="pricing-feature-item"><span style="color: var(--color-success);">&check;</span> Multi-Entity Consolidation</li>
+              <li class="pricing-feature-item"><span style="color: var(--color-success);">&check;</span> Custom API & Webhooks</li>
+              <li class="pricing-feature-item"><span style="color: var(--color-success);">&check;</span> SLA & 24/7 Phone Support</li>
+              <li class="pricing-feature-item"><span style="color: var(--color-success);">&check;</span> SOC2 Security Audits</li>
+            </ul>
+          </div>
+          <button class="btn btn-secondary btn-pill" style="width: 100%;">Contact Sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08: Conversion Canopy Banner -->
+  <section class="section" style="padding-top: var(--spacing-32);">
+    <div class="container">
+      <div class="cta-banner-container">
+        <h2 style="font-size: clamp(24px, 3.5vw, 36px); font-weight: 700; letter-spacing: -0.03em; margin-bottom: 12px;">Your Smarter Wallet Starts Today</h2>
+        <p style="font-size: 15px; color: rgba(255, 255, 255, 0.85); max-width: 520px; margin: 0 auto 24px auto;">
+          Join over 500,000 businesses and professionals managing their cashflow with confidence.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
+          <button class="btn btn-white btn-pill">Get Started Now</button>
+          <button class="btn btn-glass btn-pill">Book a Live Demo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 09: AI Prompt Recipes Section -->
   <section id="llm-prompts" class="section" style="background-color: var(--color-paper);">
     <div class="container">
       <div class="section-header">
-        <div class="section-tag">04 — AI Prompt Recipes</div>
+        <div class="section-tag">09 — AI Agent Recipes</div>
         <h2 class="section-title">Ready-to-Use Prompts for LLM Models</h2>
         <p class="section-desc">Copy and paste these exact recipes when prompting AI models to build website sections.</p>
       </div>
 
+      <!-- Recipe 1: Hero Canopy -->
       <div class="prompt-card">
         <div class="prompt-header">
-          <div class="prompt-title">Hero Section Prompt Recipe</div>
-          <button class="btn btn-secondary btn-sm btn-copy-prompt" data-target="code-hero">Copy Recipe</button>
+          <div class="prompt-title">1. Saturated Sapphire Hero Canopy Recipe</div>
+          <button class="btn btn-secondary btn-sm btn-copy-prompt" data-target="code-canopy">Copy Recipe</button>
         </div>
-        <div id="code-hero" class="prompt-code">Build a hero section using the TJH Design System:
-- Canvas background: #fafbfc, max-width 1200px centered content rail.
-- Headline: 64px Inter weight 700, #0f172a, letter-spacing -0.035em, line-height 1.05, Title Case.
-- Subtext: 18px Inter 400, #475569, max-width 640px.
-- Action row: Horizontal flex with 12px gap:
-  - Primary button: #1657a7 filled, #ffffff text, 12px radius, 12px 24px padding.
-  - Secondary button: 1px #e2e8f0 border, #ffffff background, #0f172a text, 12px radius.</div>
+        <div id="code-canopy" class="prompt-code">Build a Hero Canopy using the TJH Design System:
+- Background: linear-gradient(180deg, #1657a7 0%, #0d386c 100%), rounded bottom corners (28px radius).
+- Headline: Centered 56px Inter 700 in #ffffff with -0.035em letter-spacing, Title Case.
+- Subtext: 18px Inter 400 in rgba(255,255,255,0.85), max-width 640px.
+- Action row:
+  - Primary button: #ffffff filled pill, #1657a7 text, 12px 24px padding, Inter 15px/600.
+  - Secondary button: rgba(255,255,255,0.15) fill with 1px rgba(255,255,255,0.3) border, #ffffff text, pill radius.
+- Floating widgets: 3 overlapping UI cards with white surfaces and 0 20px 40px -12px rgba(15,23,42,0.16) shadow, breaking out of the canopy by -60px into the canvas below.</div>
       </div>
 
+      <!-- Recipe 2: Product Showcase 2x2 -->
       <div class="prompt-card">
         <div class="prompt-header">
-          <div class="prompt-title">3-Column Feature Cards Prompt Recipe</div>
-          <button class="btn btn-secondary btn-sm btn-copy-prompt" data-target="code-features">Copy Recipe</button>
+          <div class="prompt-title">2. Product Showcase 2x2 Grid Recipe</div>
+          <button class="btn btn-secondary btn-sm btn-copy-prompt" data-target="code-showcase">Copy Recipe</button>
         </div>
-        <div id="code-features" class="prompt-code">Build a 3-column feature section using the TJH Design System:
-- Max-width 1200px, 80px section vertical spacing.
-- Section header: Centered 36px Inter 600 in #0f172a with 16px subtitle in #475569.
-- Cards: #ffffff fill, 16px radius, 1px solid #e2e8f0 border, 28px padding.
-- Card Icon: 44px square plate in #edf4fc with 10px radius, 22px #1657a7 line icon.
-- Card Title: 18px Inter 600 in #0f172a. Body: 14px Inter 400 in #475569.</div>
+        <div id="code-showcase" class="prompt-code">Build a 2x2 Product Showcase grid using the TJH Design System:
+- 2 columns × 2 rows, 24px gap, max-width 1200px.
+- Each card: #ffffff background, 20px radius, 1px solid #e2e8f0 border, 24px padding.
+- Top mockup area: #f8fafc background container with 14px radius, displaying layered interactive UI elements (cards/charts/flow).
+- Bottom copy: 20px Inter 600 in #0f172a Title, followed by 14px Inter 400 in #475569 description.</div>
+      </div>
+
+      <!-- Recipe 3: 3-Tier Pricing -->
+      <div class="prompt-card">
+        <div class="prompt-header">
+          <div class="prompt-title">3. 3-Tier Pricing Grid Recipe</div>
+          <button class="btn btn-secondary btn-sm btn-copy-prompt" data-target="code-pricing">Copy Recipe</button>
+        </div>
+        <div id="code-pricing" class="prompt-code">Build a 3-tier pricing section using the TJH Design System:
+- 3 columns (Starter, Pro, Enterprise), max-width 1200px.
+- Starter & Enterprise: #ffffff fill, 1px solid #e2e8f0 border, 16px radius, #0f172a price, outlined pill button.
+- Pro (Featured): linear-gradient(180deg, #1b63bc 0%, #1657a7 100%) fill, #ffffff text and price, #ffffff filled pill button, "Most Popular" pill badge at top.
+- Feature checklist with 14px text and checked icons.</div>
       </div>
     </div>
   </section>
 
-  <!-- Technical Footer -->
+  <!-- 10: Technical Footer with Watermark -->
   <footer class="footer">
+    <div class="footer-watermark">TJH.DS</div>
     <div class="container">
       <div class="footer-inner">
         <div style="display: flex; align-items: center; gap: 12px;">

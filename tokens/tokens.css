@@ -14,6 +14,17 @@
   --color-glacier-frost: #f4f8fd;
 
   /* ==========================================================================
+     Gradients & Canopy Surfaces
+     ========================================================================== */
+  --gradient-sapphire-canopy: linear-gradient(180deg, #1657a7 0%, #0d386c 100%);
+  --gradient-sapphire-banner: linear-gradient(135deg, #1657a7 0%, #0d386c 60%, #060d17 100%);
+  --gradient-featured-card: linear-gradient(180deg, #1b63bc 0%, #1657a7 100%);
+  --surface-frosted-glass: rgba(255, 255, 255, 0.15);
+  --surface-frosted-glass-hover: rgba(255, 255, 255, 0.25);
+  --border-frosted-glass: rgba(255, 255, 255, 0.30);
+  --border-frosted-glass-active: rgba(255, 255, 255, 0.50);
+
+  /* ==========================================================================
      Colors — Neutrals & Surfaces
      ========================================================================== */
   --color-abyss: #060d17;
@@ -137,6 +148,7 @@
   --radius-button: 12px;
   --radius-card: 16px;
   --radius-panel: 20px;
+  --radius-canopy: 28px;
   --radius-pill: 9999px;
 
   /* ==========================================================================
@@ -145,7 +157,9 @@
   --shadow-subtle: 0 1px 2px 0 rgba(15, 23, 42, 0.05);
   --shadow-card: 0 1px 3px 0 rgba(15, 23, 42, 0.04), 0 1px 2px -1px rgba(15, 23, 42, 0.02);
   --shadow-card-hover: 0 12px 24px -8px rgba(15, 23, 42, 0.08), 0 4px 8px -4px rgba(15, 23, 42, 0.03);
+  --shadow-widget-floating: 0 20px 40px -12px rgba(15, 23, 42, 0.16), 0 2px 6px -1px rgba(15, 23, 42, 0.06);
   --shadow-button-primary: 0 4px 14px -2px rgba(22, 87, 167, 0.35);
+  --shadow-button-white: 0 4px 14px -2px rgba(0, 0, 0, 0.12);
   --shadow-modal: 0 24px 48px -12px rgba(15, 23, 42, 0.18), 0 8px 16px -4px rgba(15, 23, 42, 0.08);
 
   /* ==========================================================================
