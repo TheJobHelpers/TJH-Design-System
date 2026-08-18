@@ -265,3 +265,17 @@ The following components remain pending dedicated reference specifications:
 ### Governance Rule
 - When building on existing patterns: Copy the exact tokens and hex codes above.
 - When expanding into Known Gaps: Formally document the token values in `DESIGN.md` before shipping code.
+
+---
+
+## 10 — Accessibility & UI/UX Standards (WCAG 2.1 AA / 2.2 Compliant)
+
+| Category | Standard | System Requirement |
+|---|---|---|
+| **Color Contrast** | WCAG 2.1 AA (4.5:1 text, 3:1 UI) | Ink `#0f172a` (16.2:1) & Sapphire `#1657a7` (5.38:1) pass AAA/AA on white. **`#3da2ff` is strictly restricted to decorative/graphical gradient stops and dark-surface highlights — never used for small body text on light backgrounds.** |
+| **Focus Rings** | WCAG 2.4.7 / 2.4.11 | All interactive elements must implement a visible 2px focus ring (`--focus-ring-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #1971d6`) with 2px offset. |
+| **Touch Targets** | WCAG 2.5.5 / 2.5.8 | All interactive controls (buttons, links, pills, dropdown items) must maintain a minimum bounding box / touch target of **44px × 44px** on mobile viewports. |
+| **Reduced Motion** | WCAG 2.3.3 | All micro-interactions, translations, and hover lifts must respect `@media (prefers-reduced-motion: reduce)`. |
+| **Non-Color Cues** | WCAG 1.4.1 | Status badges (Success, Warning, Error) must never rely on color alone; they must pair color fills with semantic text labels or icons. |
+| **Reading Measure** | Typographic Best Practice | Body text blocks must maintain a comfortable line measure constrained to max **65–75 characters (~680px)** to prevent eye tracking fatigue. |
+| **Fluid Responsiveness** | Layout Robustness | Overlapping floating widgets must collapse into vertical flow on screens `< 640px` with zero horizontal overflow or clipping. |

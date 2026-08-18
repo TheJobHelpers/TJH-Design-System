@@ -247,6 +247,21 @@ body {
   transition: all var(--transition-fast);
   border-radius: var(--radius-button);
 }
+.btn:focus-visible,
+a:focus-visible,
+input:focus-visible,
+button:focus-visible,
+.swatch-card:focus-visible {
+  outline: 2px solid var(--color-electric-azure);
+  outline-offset: 2px;
+}
+.btn:disabled,
+.btn[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+  box-shadow: none;
+}
 .btn-primary {
   background-color: var(--color-sapphire);
   color: var(--color-paper);
@@ -295,6 +310,17 @@ body {
 .btn-sm {
   padding: 6px 14px;
   font-size: var(--text-caption);
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transform: none !important;
+  }
 }
 
 /* Feature Card (Neutral / Standard) */

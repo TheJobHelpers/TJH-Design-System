@@ -180,4 +180,15 @@
   --transition-fast: 150ms var(--ease-snappy);
   --transition-normal: 200ms var(--ease-snappy);
   --transition-slow: 300ms var(--ease-snappy);
+
+  /* ==========================================================================
+     Accessibility & State Tokens (WCAG 2.1 AA / 2.2 Compliant)
+     ========================================================================== */
+  --focus-ring-width: 2px;
+  --focus-ring-offset: 2px;
+  --focus-ring-color: #1971d6;
+  --focus-ring-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #1971d6;
+  --state-disabled-opacity: 0.5;
+  --touch-target-min: 44px;
 }
+
