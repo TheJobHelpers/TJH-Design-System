@@ -45,13 +45,17 @@ Primary brand anchor: **`#1657a7`** (Sapphire Blue).
    - **Featured Cards**: In a multi-card grid, exactly one card may take the saturated `--gradient-featured-card` with white text and translucent icon plate. Sibling cards must remain on `#ffffff` Paper surface.
    - **Pricing Grids**: The Pro / Most Popular tier uses the Sapphire gradient fill, while Starter and Enterprise remain on white `#ffffff` cards.
 
-4. **No "Vibe-Coded" Clichés:**
-   - **No headline biscuit pills:** Never place a rounded biscuit/pill badge or bullet chip directly above main headlines (e.g. `• Next Gen Finance 2.0`). Headlines stand clean and unencumbered.
-   - **No purple-on-dark:** Never inject violet, indigo, or purple gradients on dark containers.
+4. **Prohibition of "The Vibe-Coded Look" (Zero-Tolerance):**
+   - **No headline biscuit pills:** Never place a rounded biscuit/pill badge or bullet chip directly above main headlines (e.g. `• Next Gen Finance 2.0`). Headlines stand clean, bold, and unencumbered.
+   - **No purple-on-dark:** Never inject violet, indigo, or purple gradients on dark containers. Primary chromatic accent is strictly Sapphire Blue (`#1657a7`, `#1971d6`, `#3da2ff`).
+   - **No gradient keywords ("rainbow words"):** Headings must use solid Ink `#0f172a` (or solid white on canopy backgrounds) without CSS text gradient fills.
    - **No emojis in UI:** Never use emojis in badges, headings, cards, or buttons. Use semantic SVG icons or plain text.
    - **No decorative filler icons:** Every icon must relate directly to what it represents.
-   - **No gradient keywords:** Headings must use solid Ink `#0f172a` or solid white `#ffffff` on canopy backgrounds.
-   - **No heavy drop shadows:** Cards use 1px hairline borders (`#e2e8f0`) with featherlight soft elevation.
+   - **No cliché bento boxes:** No bento boxes with floating glass spheres, glowing orbs, or faux isometric cubes.
+   - **No grid line / mesh overlays:** No background wireframes, blueprint grid patterns, or particle canvas overlays.
+   - **No colored border glows:** Cards use 1px hairline borders (`#e2e8f0`) with natural, featherlight soft elevation.
+   - **No over-nested cards:** Do not nest rounded containers 3+ levels deep inside one another.
+   - **Title Case headings:** All headings, card titles, and button labels must use Title Case.
 
 5. **Respect Known Gaps:**
    - If a requested pattern is listed in `DESIGN.md` under **Known Gaps**, explicitly note to the user that it is being designed as a new extension rather than claiming it was already in the foundational spec.

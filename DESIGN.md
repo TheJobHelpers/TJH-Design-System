@@ -204,15 +204,20 @@
 
 ---
 
-## 07 — AI-Slop & Vibe-Coding Guardrails
+## 07 — Prohibition of "The Vibe-Coded Look" (Anti-Slop Directives)
 
-**Strictly Forbidden Anti-Patterns:**
-1. **No Headline Biscuit/Pill Badges:** Never place a rounded biscuit/pill badge or bullet chip directly above hero or section headlines (e.g. `• Next Gen Finance 2.0`). Headlines must stand clean and unencumbered.
-2. **No Violet/Purple Accents on Dark Backgrounds:** Never substitute `#1657a7` with neon indigo, violet, or magenta.
-3. **No Unrelatable Icons:** Every icon must map directly to its semantic function. Never scatter decorative random icons.
-4. **No Emoji in Product UI:** No emojis in badges, headings, cards, or buttons. Use monochrome SVG line icons.
-5. **No Cliché Bento Boxes with Floating Glowing Spheres.**
-6. **Title Case Headings:** All section headings, card titles, and button labels must use Title Case.
+This design system strictly prohibits generic AI aesthetic tropes (the "vibe-coded look"). Any generated layout or component must comply with the following 10 zero-tolerance rules:
+
+1. **No Headline Biscuit/Pill Badges:** Never place a rounded pill badge, chip, or pulsing bullet dot directly above hero or section headlines (e.g. `• Next Gen Finance 2.0`). Headlines must stand clean, bold, and unencumbered.
+2. **No Purple/Violet on Dark ("Vibe Purple"):** Never inject violet, indigo, magenta, or neon purple accents on dark containers. The primary chromatic voice is strictly Sapphire Blue (`#1657a7`, `#1971d6`, `#3da2ff`).
+3. **No Gradient Text Keywords ("Rainbow Words"):** Never apply CSS text gradient masks to headline keywords (`background-clip: text`). Headings must be solid, authoritative Ink `#0f172a` (or solid `#ffffff` on saturated canopy backgrounds).
+4. **No Emoji in Product UI:** Emojis are strictly banned from UI controls, badges, cards, tabs, and buttons. Use precision semantic SVG icons or plain text.
+5. **No Decorative Filler Icons:** Never use unrelated icons (sparkles, rockets, flame badges) as visual filler. Every icon must represent a concrete, relatable function.
+6. **No Icon-Stuffed Bento Overuse:** Avoid bento boxes filled with meaningless floating glass spheres, glowing orbs, or faux 3D cubes. Bento structures must contain real quantitative metrics or concrete UI widgets.
+7. **No Grid Line Backgrounds or Particle Overlays:** Never overlay blueprint gridlines, dot matrix patterns, or particle meshes onto page canvases.
+8. **No Colored Border Glows or Neon Halos:** Cards use clean 1px hairline borders (`#e2e8f0`) with natural, featherlight soft drop elevation — never glowing colored outlines.
+9. **No Over-Nested Cards:** Do not nest rounded containers three or more levels deep inside one another.
+10. **Title Case Headings Required:** All section headings, card titles, and button labels must use Title Case (e.g. *"Instant Transfers"*, not *"Instant transfers"*).
 
 ---
 
