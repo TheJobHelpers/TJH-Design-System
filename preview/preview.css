@@ -1045,28 +1045,37 @@ button:focus-visible,
   gap: 8px;
 }
 
-/* Pricing Grid */
+/* Multi-Gradient 3-Tier Pricing Architecture */
 .pricing-card {
-  background-color: var(--color-paper);
-  border: 1px solid var(--color-mist);
   border-radius: var(--radius-card);
   padding: var(--spacing-32) var(--spacing-24);
-  box-shadow: var(--shadow-card);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  overflow: hidden;
-  transition: border-color var(--transition-normal), box-shadow var(--transition-normal);
+  transition: border-color var(--transition-normal), box-shadow var(--transition-normal), transform var(--transition-normal);
 }
-.pricing-card::before {
+.pricing-card > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Tier 1: Starter (Light Featherlight Azure Gradient) */
+.pricing-card-starter {
+  background: linear-gradient(155deg, #ffffff 0%, #f8fbff 50%, #f0f7ff 100%);
+  border: 1px solid var(--color-mist);
+  box-shadow: var(--shadow-card);
+  color: var(--color-ink);
+  overflow: hidden;
+}
+.pricing-card-starter::before {
   content: '';
   position: absolute;
   inset: 0;
   border-radius: inherit;
   background: radial-gradient(
     420px circle at var(--mouse-x, -999px) var(--mouse-y, -999px),
-    rgba(61, 162, 255, 0.18),
+    rgba(25, 113, 214, 0.14),
     transparent 70%
   );
   opacity: 0;
@@ -1074,29 +1083,32 @@ button:focus-visible,
   pointer-events: none;
   z-index: 1;
 }
-.pricing-card:hover::before {
+.pricing-card-starter:hover::before {
   opacity: 1;
   transition: opacity 250ms var(--ease-snappy);
 }
-.pricing-card:hover {
+.pricing-card-starter:hover {
   box-shadow: var(--shadow-card-hover);
   border-color: var(--color-pebble);
 }
-.pricing-card > * {
-  position: relative;
-  z-index: 2;
-}
-.pricing-card-featured {
-  background: var(--gradient-featured-card);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+
+/* Tier 2: Pro Plan (Saturated Sapphire Gradient - Hero Tier) */
+.pricing-card-pro {
+  background: var(--gradient-card-sapphire);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   color: #ffffff;
-  box-shadow: 0 16px 36px -8px rgba(22, 87, 167, 0.40);
+  box-shadow: 0 20px 48px -10px rgba(22, 87, 167, 0.45);
   transform: scale(1.03);
+  overflow: visible;
 }
-.pricing-card-featured::before {
+.pricing-card-pro::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
   background: radial-gradient(
     420px circle at var(--mouse-x, -999px) var(--mouse-y, -999px),
-    rgba(255, 255, 255, 0.25),
+    rgba(255, 255, 255, 0.28),
     transparent 70%
   );
   opacity: 0;
@@ -1104,18 +1116,76 @@ button:focus-visible,
   pointer-events: none;
   z-index: 1;
 }
-.pricing-card-featured:hover::before {
+.pricing-card-pro:hover::before {
   opacity: 1;
   transition: opacity 250ms var(--ease-snappy);
 }
+.pricing-card-pro:hover {
+  box-shadow: 0 24px 56px -12px rgba(22, 87, 167, 0.55);
+}
+
+/* Top Straddling Pill Badge */
+.pricing-top-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-sapphire);
+  color: #ffffff;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  padding: 4px 18px;
+  border-radius: 9999px;
+  border: 2px solid #ffffff;
+  box-shadow: 0 4px 14px -2px rgba(22, 87, 167, 0.40);
+  white-space: nowrap;
+  z-index: 10;
+}
+
+/* Tier 3: Enterprise (Light Architectural Slate Gradient) */
+.pricing-card-enterprise {
+  background: linear-gradient(155deg, #ffffff 0%, #f8fafc 50%, #f1f5f9 100%);
+  border: 1px solid var(--color-mist);
+  color: var(--color-ink);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+.pricing-card-enterprise::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    420px circle at var(--mouse-x, -999px) var(--mouse-y, -999px),
+    rgba(61, 162, 255, 0.14),
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 500ms var(--ease-smooth);
+  pointer-events: none;
+  z-index: 1;
+}
+.pricing-card-enterprise:hover::before {
+  opacity: 1;
+  transition: opacity 250ms var(--ease-snappy);
+}
+.pricing-card-enterprise:hover {
+  box-shadow: var(--shadow-card-hover);
+  border-color: var(--color-pebble);
+}
+
 @media (max-width: 960px) {
-  .pricing-card-featured {
+  .pricing-card-pro {
     transform: none;
   }
 }
 .pricing-tier {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.01em;
   margin-bottom: 8px;
 }
 .pricing-price {
@@ -1129,21 +1199,57 @@ button:focus-visible,
   font-weight: 500;
   color: var(--color-slate);
 }
-.pricing-card-featured .pricing-price span {
-  color: rgba(255, 255, 255, 0.8);
+.pricing-card-pro .pricing-price span {
+  color: rgba(255, 255, 255, 0.80);
 }
 .pricing-features {
   list-style: none;
   margin-bottom: var(--spacing-24);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 .pricing-feature-item {
   font-size: 13.5px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
+}
+
+/* Circular Icon Plates for Ticks and Crosses */
+.pricing-check-icon,
+.pricing-cross-icon {
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform var(--transition-fast);
+}
+.pricing-card-starter .pricing-check-icon,
+.pricing-card-enterprise .pricing-check-icon {
+  background-color: #d1fae5;
+  color: #059669;
+}
+.pricing-card-starter .pricing-cross-icon,
+.pricing-card-enterprise .pricing-cross-icon {
+  background-color: #f1f5f9;
+  color: #94a3b8;
+}
+.pricing-card-pro .pricing-check-icon {
+  background-color: rgba(255, 255, 255, 0.22);
+  color: #ffffff;
+}
+.pricing-card-pro .pricing-cross-icon {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.60);
+}
+.pricing-feature-item:hover .pricing-check-icon,
+.pricing-feature-item:hover .pricing-cross-icon {
+  transform: scale(1.08);
 }
 
 /* Bento Proof Block */

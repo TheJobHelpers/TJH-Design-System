@@ -786,53 +786,87 @@
         <p class="section-desc" style="margin: 0 auto;">Transparent plan tiers featuring a Sapphire gradient highlighted Pro tier.</p>
       </div>
 
-      <div class="grid-3" style="align-items: center;">
-        <!-- Starter Tier -->
-        <div class="pricing-card">
+      <div class="grid-3" style="align-items: center; margin-top: 16px;">
+        <!-- Tier 1: Starter Plan (Light Featherlight Azure Gradient) -->
+        <div class="pricing-card pricing-card-starter">
           <div>
             <div class="pricing-tier" style="color: var(--color-ink);">Starter</div>
-            <div class="pricing-price">$0 <span>/ month</span></div>
+            <div class="pricing-price" style="color: var(--color-ink);">$0 <span style="color: var(--color-slate);">/ month</span></div>
             <ul class="pricing-features">
-              <li class="pricing-feature-item"><span style="color: var(--color-success);">&check;</span> Up to 3 Linked Accounts</li>
-              <li class="pricing-feature-item"><span style="color: var(--color-success);">&check;</span> Standard Transfer Speeds</li>
-              <li class="pricing-feature-item"><span style="color: var(--color-success);">&check;</span> Basic Spending Insights</li>
-              <li class="pricing-feature-item" style="color: var(--color-steel);">&bull; Real-time AI Alerts</li>
+              <li class="pricing-feature-item">
+                <span class="pricing-check-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Up to 3 Linked Accounts</span>
+              </li>
+              <li class="pricing-feature-item">
+                <span class="pricing-check-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Standard Transfer Speeds</span>
+              </li>
+              <li class="pricing-feature-item">
+                <span class="pricing-check-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Basic Spending Insights</span>
+              </li>
+              <li class="pricing-feature-item" style="color: var(--color-steel); opacity: 0.75;">
+                <span class="pricing-cross-icon"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>
+                <span>Real-Time AI Alerts</span>
+              </li>
             </ul>
           </div>
-          <button class="btn btn-secondary btn-pill" style="width: 100%;">Get Started Free</button>
+          <button class="btn btn-secondary" style="width: 100%;">Get Started Free</button>
         </div>
 
-        <!-- Pro Tier (FEATURED SAPPHIRE) -->
-        <div class="pricing-card pricing-card-featured">
+        <!-- Tier 2: Pro Plan (Saturated Sapphire Gradient - Hero Tier) -->
+        <div class="pricing-card pricing-card-pro">
+          <div class="pricing-top-badge">Most Popular</div>
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-              <div class="pricing-tier" style="color: #ffffff;">Pro Plan</div>
-              <span style="padding: 3px 10px; background: rgba(255,255,255,0.2); border-radius: 9999px; font-size: 11px; font-weight: 700;">MOST POPULAR</span>
-            </div>
-            <div class="pricing-price" style="color: #ffffff;">$9 <span>/ month</span></div>
+            <div class="pricing-tier" style="color: #ffffff;">Pro Plan</div>
+            <div class="pricing-price" style="color: #ffffff;">$9 <span style="color: rgba(255, 255, 255, 0.80);">/ month</span></div>
             <ul class="pricing-features">
-              <li class="pricing-feature-item"><span>&check;</span> Unlimited Linked Accounts</li>
-              <li class="pricing-feature-item"><span>&check;</span> Instant Priority Transfers</li>
-              <li class="pricing-feature-item"><span>&check;</span> Predictive AI Budgeting</li>
-              <li class="pricing-feature-item"><span>&check;</span> Dedicated Account Lead</li>
+              <li class="pricing-feature-item">
+                <span class="pricing-check-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Unlimited Linked Accounts</span>
+              </li>
+              <li class="pricing-feature-item">
+                <span class="pricing-check-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Instant Priority Transfers</span>
+              </li>
+              <li class="pricing-feature-item">
+                <span class="pricing-check-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Predictive AI Budgeting</span>
+              </li>
+              <li class="pricing-feature-item">
+                <span class="pricing-check-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Dedicated Account Lead</span>
+              </li>
             </ul>
           </div>
-          <button class="btn btn-white btn-pill" style="width: 100%;">Upgrade to Pro</button>
+          <button class="btn btn-white" style="width: 100%;">Upgrade to Pro</button>
         </div>
 
-        <!-- Enterprise Tier -->
-        <div class="pricing-card">
+        <!-- Tier 3: Enterprise Plan (Light Architectural Slate Gradient) -->
+        <div class="pricing-card pricing-card-enterprise">
           <div>
             <div class="pricing-tier" style="color: var(--color-ink);">Enterprise</div>
-            <div class="pricing-price">$29 <span>/ month</span></div>
+            <div class="pricing-price" style="color: var(--color-ink);">$29 <span style="color: var(--color-slate);">/ month</span></div>
             <ul class="pricing-features">
-              <li class="pricing-feature-item"><span style="color: var(--color-success);">&check;</span> Multi-Entity Consolidation</li>
-              <li class="pricing-feature-item"><span style="color: var(--color-success);">&check;</span> Custom API & Webhooks</li>
-              <li class="pricing-feature-item"><span style="color: var(--color-success);">&check;</span> SLA & 24/7 Phone Support</li>
-              <li class="pricing-feature-item"><span style="color: var(--color-success);">&check;</span> SOC2 Security Audits</li>
+              <li class="pricing-feature-item">
+                <span class="pricing-check-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Multi-Entity Consolidation</span>
+              </li>
+              <li class="pricing-feature-item">
+                <span class="pricing-check-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Custom API & Webhooks</span>
+              </li>
+              <li class="pricing-feature-item">
+                <span class="pricing-check-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>SLA & 24/7 Phone Support</span>
+              </li>
+              <li class="pricing-feature-item">
+                <span class="pricing-check-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>SOC2 Security Audits</span>
+              </li>
             </ul>
           </div>
-          <button class="btn btn-secondary btn-pill" style="width: 100%;">Contact Sales</button>
+          <button class="btn btn-secondary" style="width: 100%;">Contact Sales</button>
         </div>
       </div>
     </div>

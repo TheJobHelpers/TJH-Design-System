@@ -166,10 +166,11 @@
   - **Social Proof Strip:** Monochrome partner logo row anchored below.
 
 ### 7. 3-Tier Pricing Component (`pricing-grid`)
-- **Layout:** 3-column cards (`Starter`, `Pro / Most Popular`, `Enterprise`).
-- **Standard Tiers (Starter & Enterprise):** White background (`#ffffff`), `1px solid var(--color-mist)`, 16px radius, Ink price, outlined pill CTA button.
-- **Featured Tier (Pro):** Sapphire gradient background (`--gradient-featured-card`), `#ffffff` price and feature text, `#ffffff` filled pill CTA button, topped with a "Most Popular" translucent pill badge.
-- **Feature Checklist:** Checked icons (`#059669` or `#ffffff` on blue) paired with 14px body text.
+- **Layout:** 3-column responsive card grid (`Starter`, `Pro Plan / Most Popular`, `Enterprise`).
+- **Tier 1: Starter (`pricing-card-starter`):** Light Featherlight Azure gradient (`linear-gradient(155deg, #ffffff 0%, #f8fbff 50%, #f0f7ff 100%)`), `1px solid var(--color-mist)`, Ink typography, clean unencumbered header, and 12px precision secondary button.
+- **Tier 2: Pro Plan (`pricing-card-pro` — Featured Hero Tier):** Saturated Electric Sapphire canopy gradient (`--gradient-card-sapphire`), elevated `scale(1.03)` with `0 20px 48px -10px rgba(22, 87, 167, 0.45)`, `#ffffff` typography, solid `#ffffff` 12px precision button, and topped with a **top-straddling "Most Popular" pill badge** (`position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: #1657a7; border: 2px solid #ffffff; border-radius: 9999px;`).
+- **Tier 3: Enterprise (`pricing-card-enterprise`):** Light Architectural Slate gradient (`linear-gradient(155deg, #ffffff 0%, #f8fafc 50%, #f1f5f9 100%)`), `1px solid var(--color-mist)`, Ink typography, clean unencumbered header, and 12px precision secondary button.
+- **Feature Checklist:** High-contrast semantic SVG vector checkmarks paired with 13.5px body text. Muted crossed SVGs for unavailable tier features.
 
 ### 8. Conversion Canopy Banner (`cta-canopy`)
 - **Container:** Full-width or boxed `24px` radius container with `--gradient-sapphire-banner`.
