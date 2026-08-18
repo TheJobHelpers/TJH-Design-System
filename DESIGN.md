@@ -45,6 +45,12 @@
 | `--gradient-card-cobalt` | `linear-gradient(140deg, #2563eb 0%, #1e40af 50%, #1657a7 100%)` | Themed card (AI Insights, Intelligence, Data) |
 | `--gradient-card-emerald` | `linear-gradient(140deg, #10b981 0%, #059669 50%, #047857 100%)` | Themed card (Security, Compliance, Savings) |
 | `--gradient-card-amber` | `linear-gradient(140deg, #f59e0b 0%, #d97706 50%, #b45309 100%)` | Themed card (Real-Time Tracking, Growth) |
+| `--gradient-soft-emerald` | `linear-gradient(145deg, #f6fef9 0%, #ecfdf5 50%, #d1fae5 100%)` | Soft gradient for Security card |
+| `--gradient-soft-sapphire` | `linear-gradient(145deg, #f8fbff 0%, #ebf5ff 50%, #dbeafe 100%)` | Soft gradient for Instant Transfers card |
+| `--gradient-soft-sky` | `linear-gradient(145deg, #f8fcff 0%, #f0f9ff 50%, #e0f2fe 100%)` | Soft gradient for AI Insights card |
+| `--gradient-soft-azure` | `linear-gradient(145deg, #f8faff 0%, #edf5ff 50%, #dbeafe 100%)` | Soft gradient for Global Payments card |
+| `--gradient-soft-amber` | `linear-gradient(145deg, #fffef7 0%, #fffbeb 50%, #fef3c7 100%)` | Soft gradient for Real-Time Tracking card |
+| `--gradient-soft-slate` | `linear-gradient(145deg, #fafbfc 0%, #f1f5f9 50%, #e2e8f0 100%)` | Soft gradient for All-in-One Wallet card |
 | `--surface-frosted-glass` | `rgba(255, 255, 255, 0.15)` | Frosted glass secondary CTA button & floating badges |
 | `--border-frosted-glass` | `rgba(255, 255, 255, 0.30)` | Border stroke for frosted glass controls |
 
@@ -136,15 +142,17 @@
 - **Typography:** White display headlines with negative tracking (`-0.035em`), centered or asymmetric left-aligned.
 - **Floating UI Widgets:** Stack of elevated floating cards (balance chips, transaction rows, analytics charts) overlapping and breaking through the lower boundary of the canopy into the white canvas (`margin-bottom: -60px` to `-80px`, `z-index: 10`, `box-shadow: 0 20px 40px -12px rgba(15, 23, 42, 0.16)`).
 
-### 4. Content-Aware Multi-Colored Grid Cards (`card-featured`)
-- **Use Case:** In a 6-card or 3-column feature grid, cards dynamically adapt their surface treatment based on their content hierarchy.
-- **Themed Gradients (Saturated / Highlighted Focus):**
-  - **Transfers / Speed / Primary Action:** `--gradient-card-sapphire` (`#3da2ff` &rarr; `#1657a7`)
-  - **AI / Intelligence / Analytics:** `--gradient-card-cobalt` (`#2563eb` &rarr; `#1657a7`)
-  - **Security / Compliance / Savings:** `--gradient-card-emerald` (`#10b981` &rarr; `#047857`)
-  - **Performance / Tracking / Growth:** `--gradient-card-amber` (`#f59e0b` &rarr; `#b45309`)
-- **Highlighted Card Anatomy:** `24px` border radius, `32px 28px` padding, white typography (`20px` title, `14px` description at `rgba(255, 255, 255, 0.90)`), circular frosted translucent icon plate (`width: 48px`, `border-radius: 50%`, `background: rgba(255, 255, 255, 0.22)`, `border: 1px solid rgba(255, 255, 255, 0.35)`).
-- **Sibling Neutral Cards:** Paper canvas (`#ffffff`), `24px` border radius, `1px solid var(--color-mist)`, with `--color-ink` title, `--color-slate` description, and circular neutral icon plate (`#f1f5f9` fill, `1px solid #e2e8f0`).
+### 4. 6-Card Multi-Colored Grid Cards (`feature-grid`)
+- **Use Case:** In the 6-card feature grid, each card commands a distinct, content-aligned color identity to aid visual scannability.
+- **Card Color Mappings:**
+  1. **Bank-Level Security (Emerald Mint):** `--card-tint-emerald-bg` (`#f0fdf4`), border `#bbf7d0`, circular icon plate `#dcfce7`, icon stroke `#166534`.
+  2. **Instant Transfers (Electric Sapphire):** Primary focus card in `--gradient-card-sapphire` (`#3da2ff` &rarr; `#1657a7`), white text, frosted glass bubble plate (`rgba(255,255,255,0.22)`).
+  3. **AI Smart Insights (Sky Cyan):** `--card-tint-sky-bg` (`#f0f9ff`), border `#bae6fd`, circular icon plate `#e0f2fe`, icon stroke `#0369a1`.
+  4. **Global Payments (Azure Blue):** `--card-tint-azure-bg` (`#edf5ff`), border `#bfdbfe`, circular icon plate `#dbeafe`, icon stroke `#1d4ed8`.
+  5. **Real-Time Tracking (Amber Sunrise):** `--card-tint-amber-bg` (`#fffbeb`), border `#fde68a`, circular icon plate `#fef3c7`, icon stroke `#b45309`.
+  6. **All-in-One Wallet (Slate Graphite):** `--card-tint-slate-bg` (`#f8fafc`), border `#e2e8f0`, circular icon plate `#f1f5f9`, icon stroke `#334155`.
+- **Card Geometry:** `24px` border radius, `32px 28px` padding, `48px` circular icon plate (`50%` radius), 20px Inter 600 title, 14px Inter 400 description.
+- **All-Gradient Variant:** Alternatively, grids can use saturated gradients across all 6 cards (`--gradient-card-emerald`, `--gradient-card-sapphire`, `--gradient-card-cyan`, `--gradient-card-cobalt`, `--gradient-card-amber`, `--gradient-card-slate`).
 
 ### 5. Product Showcase 2x2 Grid (`showcase-card`)
 - **Layout:** 2 columns × 2 rows of large feature cards (`20px` radius).

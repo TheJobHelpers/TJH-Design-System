@@ -46,18 +46,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Theme gradient switcher for featured card
-  const featuredCard = document.getElementById('featured-demo-card');
-  document.querySelectorAll('.btn-theme-toggle').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const theme = btn.getAttribute('data-theme');
-      if (featuredCard) {
-        // Remove all previous theme classes
-        featuredCard.classList.remove('card-theme-sapphire', 'card-theme-cobalt', 'card-theme-emerald', 'card-theme-amber');
-        featuredCard.classList.add(`card-theme-${theme}`);
-        showToast(`Switched card theme to ${theme.toUpperCase()} gradient`);
-      }
+  // Palette Mode Switcher (Soft Tint Palette vs All-Gradient Saturated)
+  const gridContainer = document.getElementById('feature-grid-container');
+  const btnModeTint = document.getElementById('btn-mode-tint');
+  const btnModeGradient = document.getElementById('btn-mode-gradient');
+
+  if (btnModeTint && btnModeGradient && gridContainer) {
+    btnModeTint.addEventListener('click', () => {
+      gridContainer.classList.remove('grid-all-gradients');
+      btnModeTint.style.background = 'var(--color-ink)';
+      btnModeTint.style.color = '#fff';
+      btnModeGradient.style.background = 'var(--color-glacier-frost)';
+      btnModeGradient.style.color = 'var(--color-ink)';
+      showToast('Switched to Soft Multi-Colored Tint Palette');
     });
-  });
+
+    btnModeGradient.addEventListener('click', () => {
+      gridContainer.classList.add('grid-all-gradients');
+      btnModeGradient.style.background = 'var(--color-ink)';
+      btnModeGradient.style.color = '#fff';
+      btnModeTint.style.background = 'var(--color-glacier-frost)';
+      btnModeTint.style.color = 'var(--color-ink)';
+      showToast('Switched to Saturated Multi-Gradient Palette');
+    });
+  }
 });
 

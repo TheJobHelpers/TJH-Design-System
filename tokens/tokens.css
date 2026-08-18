@@ -29,6 +29,45 @@
   --gradient-card-cobalt: linear-gradient(140deg, #2563eb 0%, #1e40af 50%, #1657a7 100%);
   --gradient-card-emerald: linear-gradient(140deg, #10b981 0%, #059669 50%, #047857 100%);
   --gradient-card-amber: linear-gradient(140deg, #f59e0b 0%, #d97706 50%, #b45309 100%);
+  --gradient-card-cyan: linear-gradient(140deg, #06b6d4 0%, #0891b2 50%, #0e7490 100%);
+  --gradient-card-slate: linear-gradient(140deg, #64748b 0%, #475569 50%, #334155 100%);
+  
+  /* Multi-Colored Soft Card Surface Gradients & Tints */
+  --gradient-soft-emerald: linear-gradient(145deg, #f6fef9 0%, #ecfdf5 50%, #d1fae5 100%);
+  --card-tint-emerald-bg: var(--gradient-soft-emerald);
+  --card-tint-emerald-border: #a7f3d0;
+  --card-tint-emerald-plate: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+  --card-tint-emerald-icon: #166534;
+
+  --gradient-soft-sapphire: linear-gradient(145deg, #f8fbff 0%, #ebf5ff 50%, #dbeafe 100%);
+  --card-tint-sapphire-bg: var(--gradient-soft-sapphire);
+  --card-tint-sapphire-border: #bfdbfe;
+  --card-tint-sapphire-plate: linear-gradient(135deg, #e0effe 0%, #bae6fd 100%);
+  --card-tint-sapphire-icon: #1657a7;
+
+  --gradient-soft-sky: linear-gradient(145deg, #f8fcff 0%, #f0f9ff 50%, #e0f2fe 100%);
+  --card-tint-sky-bg: var(--gradient-soft-sky);
+  --card-tint-sky-border: #bae6fd;
+  --card-tint-sky-plate: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+  --card-tint-sky-icon: #0369a1;
+
+  --gradient-soft-azure: linear-gradient(145deg, #f8faff 0%, #edf5ff 50%, #dbeafe 100%);
+  --card-tint-azure-bg: var(--gradient-soft-azure);
+  --card-tint-azure-border: #bfdbfe;
+  --card-tint-azure-plate: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+  --card-tint-azure-icon: #1d4ed8;
+
+  --gradient-soft-amber: linear-gradient(145deg, #fffef7 0%, #fffbeb 50%, #fef3c7 100%);
+  --card-tint-amber-bg: var(--gradient-soft-amber);
+  --card-tint-amber-border: #fde68a;
+  --card-tint-amber-plate: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  --card-tint-amber-icon: #b45309;
+
+  --gradient-soft-slate: linear-gradient(145deg, #fafbfc 0%, #f1f5f9 50%, #e2e8f0 100%);
+  --card-tint-slate-bg: var(--gradient-soft-slate);
+  --card-tint-slate-border: #cbd5e1;
+  --card-tint-slate-plate: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+  --card-tint-slate-icon: #334155;
   
   --surface-frosted-glass: rgba(255, 255, 255, 0.15);
   --surface-frosted-glass-hover: rgba(255, 255, 255, 0.25);
