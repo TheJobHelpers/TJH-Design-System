@@ -27,10 +27,8 @@ Primary brand anchor: **`#1657a7`** (Sapphire Blue).
 ## 3. Strict Rules for AI Generation (Zero Hallucination)
 
 1. **Quote Exact Hex Codes & Tokens:**
-   - Primary Accent: `#1657a7` (`--color-sapphire`)
-   - Hover / Active: `#0d386c` (`--color-sapphire-deep`)
-   - Sapphire Canopy Gradient: `linear-gradient(180deg, #1657a7 0%, #0d386c 100%)`
-   - Dark Abyss Footer: `#060d17` (`--color-abyss`)
+   - Default Brand Gradient: `linear-gradient(140deg, #3da2ff 0%, #1971d6 50%, #1657a7 100%)` (`--gradient-default` / `--gradient-sapphire`)
+   - Sapphire Canopy Gradient: `linear-gradient(160deg, #3da2ff 0%, #1971d6 45%, #1657a7 100%)` (`--gradient-sapphire-canopy`)
    - Text Ink: `#0f172a` (`--color-ink`)
    - Secondary Text Slate: `#475569` (`--color-slate`)
    - Border Hairline: `#e2e8f0` (`--color-mist`)

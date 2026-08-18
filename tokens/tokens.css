@@ -14,11 +14,20 @@
   --color-glacier-frost: #f4f8fd;
 
   /* ==========================================================================
-     Gradients & Canopy Surfaces
+     Gradients & Canopy Surfaces (Default: Electric Sapphire)
      ========================================================================== */
-  --gradient-sapphire-canopy: linear-gradient(180deg, #1657a7 0%, #0d386c 100%);
-  --gradient-sapphire-banner: linear-gradient(135deg, #1657a7 0%, #0d386c 60%, #060d17 100%);
-  --gradient-featured-card: linear-gradient(180deg, #1b63bc 0%, #1657a7 100%);
+  --gradient-default: linear-gradient(140deg, #3da2ff 0%, #1971d6 50%, #1657a7 100%);
+  --gradient-sapphire: linear-gradient(140deg, #3da2ff 0%, #1971d6 50%, #1657a7 100%);
+  --gradient-sapphire-canopy: linear-gradient(160deg, #3da2ff 0%, #1971d6 45%, #1657a7 100%);
+  --gradient-sapphire-banner: linear-gradient(140deg, #3da2ff 0%, #1971d6 50%, #1657a7 100%);
+  --gradient-featured-card: linear-gradient(140deg, #3da2ff 0%, #1971d6 50%, #1657a7 100%);
+  
+  /* Content-Aware Themed Card Gradients */
+  --gradient-card-sapphire: linear-gradient(140deg, #3da2ff 0%, #1971d6 50%, #1657a7 100%);
+  --gradient-card-cobalt: linear-gradient(140deg, #2563eb 0%, #1e40af 50%, #1657a7 100%);
+  --gradient-card-emerald: linear-gradient(140deg, #10b981 0%, #059669 50%, #047857 100%);
+  --gradient-card-amber: linear-gradient(140deg, #f59e0b 0%, #d97706 50%, #b45309 100%);
+  
   --surface-frosted-glass: rgba(255, 255, 255, 0.15);
   --surface-frosted-glass-hover: rgba(255, 255, 255, 0.25);
   --border-frosted-glass: rgba(255, 255, 255, 0.30);

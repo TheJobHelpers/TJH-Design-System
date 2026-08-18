@@ -46,14 +46,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Global token copy button
-  const copyTokensBtn = document.getElementById('btn-copy-tokens');
-  if (copyTokensBtn) {
-    copyTokensBtn.addEventListener('click', () => {
-      copyToClipboard(
-        `--color-sapphire: #1657a7;\n--color-sapphire-deep: #0d386c;\n--color-azure: #2d7ee8;\n--color-glacier: #edf4fc;\n--color-abyss: #060d17;\n--color-ink: #0f172a;\n--color-slate: #475569;\n--color-mist: #e2e8f0;`,
-        'Copied core design tokens CSS!'
-      );
+  // Theme gradient switcher for featured card
+  const featuredCard = document.getElementById('featured-demo-card');
+  document.querySelectorAll('.btn-theme-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const theme = btn.getAttribute('data-theme');
+      if (featuredCard) {
+        // Remove all previous theme classes
+        featuredCard.classList.remove('card-theme-sapphire', 'card-theme-cobalt', 'card-theme-emerald', 'card-theme-amber');
+        featuredCard.classList.add(`card-theme-${theme}`);
+        showToast(`Switched card theme to ${theme.toUpperCase()} gradient`);
+      }
     });
-  }
+  });
 });
+
