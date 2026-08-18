@@ -918,13 +918,13 @@ button:focus-visible,
   z-index: 2;
 }
 .showcase-preview-plate {
-  background-color: var(--color-glacier-frost);
-  padding: var(--spacing-24);
+  background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+  padding: 24px 20px;
   border-bottom: 1px solid var(--color-mist);
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 180px;
+  min-height: 220px;
 }
 .showcase-info {
   padding: var(--spacing-24);
@@ -940,6 +940,151 @@ button:focus-visible,
   font-size: 13.5px;
   color: var(--color-slate);
   line-height: 1.5;
+}
+
+/* Saturated All-Gradient Mode for Product Showcase Grid */
+.showcase-card {
+  border-radius: var(--radius-panel);
+  overflow: hidden;
+  position: relative;
+  transition: border-color var(--transition-normal), box-shadow var(--transition-normal);
+  color: #ffffff;
+}
+.showcase-card .showcase-title {
+  color: #ffffff;
+}
+.showcase-card .showcase-desc {
+  color: rgba(255, 255, 255, 0.90);
+}
+.showcase-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    420px circle at var(--mouse-x, -999px) var(--mouse-y, -999px),
+    rgba(255, 255, 255, 0.28),
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 500ms var(--ease-smooth);
+  pointer-events: none;
+  z-index: 1;
+}
+.showcase-card:hover::before {
+  opacity: 1;
+  transition: opacity 250ms var(--ease-snappy);
+}
+.showcase-card .showcase-preview-plate {
+  background: rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* 4 Thematic Saturated Gradient Cards */
+.showcase-card.card-color-wallet {
+  background: var(--gradient-card-sapphire);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 16px 36px -8px rgba(22, 87, 167, 0.40);
+}
+.showcase-card.card-color-wallet:hover {
+  box-shadow: 0 20px 44px -10px rgba(22, 87, 167, 0.50);
+}
+
+.showcase-card.card-color-transfers {
+  background: var(--gradient-card-emerald);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 16px 36px -8px rgba(5, 150, 105, 0.40);
+}
+.showcase-card.card-color-transfers:hover {
+  box-shadow: 0 20px 44px -10px rgba(5, 150, 105, 0.50);
+}
+
+.showcase-card.card-color-ai {
+  background: var(--gradient-card-cyan);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 16px 36px -8px rgba(6, 182, 212, 0.40);
+}
+.showcase-card.card-color-ai:hover {
+  box-shadow: 0 20px 44px -10px rgba(6, 182, 212, 0.50);
+}
+
+.showcase-card.card-color-analytics {
+  background: var(--gradient-card-amber);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 16px 36px -8px rgba(217, 119, 6, 0.40);
+}
+.showcase-card.card-color-analytics:hover {
+  box-shadow: 0 20px 44px -10px rgba(217, 119, 6, 0.50);
+}
+
+/* Product Showcase Mockup Components */
+.mockup-virtual-card {
+  width: 100%;
+  max-width: 320px;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border-radius: 16px;
+  padding: 16px 18px;
+  color: #ffffff;
+  box-shadow: 0 12px 28px -6px rgba(15, 23, 42, 0.30), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.mockup-card-chip {
+  width: 28px;
+  height: 20px;
+  background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.mockup-transfer-box {
+  width: 100%;
+  max-width: 340px;
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid var(--color-mist);
+  box-shadow: var(--shadow-card);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mockup-ai-box {
+  width: 100%;
+  max-width: 340px;
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid var(--color-mist);
+  box-shadow: var(--shadow-card);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.mockup-segmented-bar {
+  display: flex;
+  height: 8px;
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+  gap: 2px;
+}
+
+.mockup-telemetry-box {
+  width: 100%;
+  max-width: 340px;
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid var(--color-mist);
+  box-shadow: var(--shadow-card);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 /* Pricing Grid */

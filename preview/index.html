@@ -465,15 +465,21 @@
       </div>
 
       <div class="grid-2">
-        <!-- Showcase Card 1 -->
-        <div class="showcase-card">
+        <!-- Showcase Card 1: Smart Wallet Management -->
+        <div class="showcase-card card-color-wallet">
           <div class="showcase-preview-plate">
-            <div style="background: #ffffff; padding: 16px 24px; border-radius: 12px; box-shadow: var(--shadow-card); border: 1px solid var(--color-mist); text-align: center; width: 80%;">
-              <div style="font-size: 11px; color: var(--color-slate); text-transform: uppercase; font-weight: 600;">Main Wallet Balance</div>
-              <div style="font-size: 24px; font-weight: 700; color: var(--color-ink); margin: 4px 0;">$32,480.00</div>
-              <div style="display: flex; gap: 8px; justify-content: center; margin-top: 10px;">
-                <span style="font-size: 11px; background: var(--color-sapphire); color: #fff; padding: 3px 8px; border-radius: 4px; font-weight: 600;">VISA</span>
-                <span style="font-size: 11px; background: var(--color-carbon); color: #fff; padding: 3px 8px; border-radius: 4px; font-weight: 600;">Apple Pay</span>
+            <div class="mockup-virtual-card">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="mockup-card-chip"></div>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="2"><path d="M8.5 16.5a5 5 0 0 1 0-9M12 19a8.5 8.5 0 0 0 0-14M15.5 21.5a12 12 0 0 0 0-19"/></svg>
+              </div>
+              <div>
+                <div style="font-size: 10px; color: rgba(255, 255, 255, 0.65); text-transform: uppercase; font-weight: 600; letter-spacing: 0.05em;">Available Balance</div>
+                <div style="font-size: 24px; font-weight: 700; color: #ffffff; letter-spacing: -0.02em;">$32,480.00</div>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: flex-end; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 8px;">
+                <div style="font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.1em; color: rgba(255,255,255,0.85);">•••• 8492</div>
+                <span style="font-size: 10px; background: rgba(255,255,255,0.15); color: #fff; padding: 2px 8px; border-radius: 4px; font-weight: 700; letter-spacing: 0.04em;">VISA INFINITE</span>
               </div>
             </div>
           </div>
@@ -483,15 +489,38 @@
           </div>
         </div>
 
-        <!-- Showcase Card 2 -->
-        <div class="showcase-card">
+        <!-- Showcase Card 2: Instant Money Transfers -->
+        <div class="showcase-card card-color-transfers">
           <div class="showcase-preview-plate">
-            <div style="background: #ffffff; padding: 16px 20px; border-radius: 12px; box-shadow: var(--shadow-card); border: 1px solid var(--color-mist); width: 85%;">
-              <div style="display: flex; justify-content: space-between; align-items: center; font-size: 12px; margin-bottom: 8px;">
-                <span style="font-weight: 600;">Instant Transfer</span>
-                <span style="color: var(--color-success); font-weight: 700;">Completed</span>
+            <div class="mockup-transfer-box">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <div style="width: 28px; height: 28px; border-radius: 50%; background: var(--color-glacier); color: var(--color-electric-azure); display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700;">AR</div>
+                  <div>
+                    <div style="font-size: 12px; font-weight: 700; color: var(--color-ink);">Alex Rivera</div>
+                    <div style="font-size: 11px; color: var(--color-slate);">Primary Checking</div>
+                  </div>
+                </div>
+                <div style="font-size: 13px; font-weight: 700; color: var(--color-ink);">$1,250.00</div>
               </div>
-              <div style="font-size: 18px; font-weight: 700; color: var(--color-electric-azure);">$1,250.00 &rarr; Client Ops</div>
+              <div style="display: flex; align-items: center; justify-content: center; gap: 8px; padding: 4px 0;">
+                <div style="height: 1px; flex: 1; background: var(--color-mist);"></div>
+                <span style="font-size: 10px; font-weight: 700; color: var(--color-success); background: var(--color-success-bg); padding: 2px 8px; border-radius: 9999px; display: flex; align-items: center; gap: 4px;">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                  0.4s Instant Settlement
+                </span>
+                <div style="height: 1px; flex: 1; background: var(--color-mist);"></div>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <div style="width: 28px; height: 28px; border-radius: 50%; background: #ecfdf5; color: var(--color-success); display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700;">AC</div>
+                  <div>
+                    <div style="font-size: 12px; font-weight: 700; color: var(--color-ink);">Acme Corp Global</div>
+                    <div style="font-size: 11px; color: var(--color-success); font-weight: 600;">Funds Received ✓</div>
+                  </div>
+                </div>
+                <span style="font-size: 11px; font-weight: 600; color: var(--color-electric-azure); background: var(--color-glacier); padding: 2px 8px; border-radius: 4px;">Wire API</span>
+              </div>
             </div>
           </div>
           <div class="showcase-info">
@@ -500,14 +529,24 @@
           </div>
         </div>
 
-        <!-- Showcase Card 3 -->
-        <div class="showcase-card">
+        <!-- Showcase Card 3: AI Spending Insights -->
+        <div class="showcase-card card-color-ai">
           <div class="showcase-preview-plate">
-            <div style="background: #ffffff; padding: 16px 20px; border-radius: 12px; box-shadow: var(--shadow-card); border: 1px solid var(--color-mist); width: 85%;">
-              <div style="font-size: 11px; font-weight: 600; color: var(--color-slate);">AI Spending Insights</div>
-              <div style="font-size: 20px; font-weight: 700; color: var(--color-ink); margin: 4px 0;">-$450 Saved</div>
-              <div class="progress-track" style="margin-top: 8px;">
-                <div class="progress-bar" style="width: 70%;"></div>
+            <div class="mockup-ai-box">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-size: 10px; font-weight: 700; color: var(--color-electric-azure); background: var(--color-glacier); padding: 2px 8px; border-radius: 9999px;">AI OPTIMIZATION</span>
+                <span style="font-size: 12px; font-weight: 700; color: var(--color-success);">-$450.00 Saved</span>
+              </div>
+              <div style="font-size: 11.5px; color: var(--color-slate); line-height: 1.4;">Identified 3 idle cloud seats and automated tier downgrade.</div>
+              <div class="mockup-segmented-bar" style="margin-top: 4px;">
+                <div style="width: 48%; background: var(--color-electric-azure);" title="SaaS: 48%"></div>
+                <div style="width: 32%; background: var(--color-sapphire-sky);" title="Cloud: 32%"></div>
+                <div style="width: 20%; background: var(--color-success);" title="Ops: 20%"></div>
+              </div>
+              <div style="display: flex; justify-content: space-between; font-size: 10.5px; color: var(--color-slate); font-weight: 600;">
+                <span style="display: flex; align-items: center; gap: 4px;"><span style="width: 6px; height: 6px; border-radius: 50%; background: var(--color-electric-azure);"></span> SaaS ($1.4K)</span>
+                <span style="display: flex; align-items: center; gap: 4px;"><span style="width: 6px; height: 6px; border-radius: 50%; background: var(--color-sapphire-sky);"></span> Cloud ($820)</span>
+                <span style="display: flex; align-items: center; gap: 4px;"><span style="width: 6px; height: 6px; border-radius: 50%; background: var(--color-success);"></span> Ops ($460)</span>
               </div>
             </div>
           </div>
@@ -517,15 +556,38 @@
           </div>
         </div>
 
-        <!-- Showcase Card 4 -->
-        <div class="showcase-card">
+        <!-- Showcase Card 4: Real-Time Analytics -->
+        <div class="showcase-card card-color-analytics">
           <div class="showcase-preview-plate">
-            <div style="background: #ffffff; padding: 16px 20px; border-radius: 12px; box-shadow: var(--shadow-card); border: 1px solid var(--color-mist); width: 85%;">
-              <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px; color: var(--color-slate); font-weight: 600;">
-                <span>Monthly Recurring</span>
-                <span style="color: var(--color-success);">+24.8%</span>
+            <div class="mockup-telemetry-box">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div style="font-size: 11px; font-weight: 700; color: var(--color-slate); text-transform: uppercase; letter-spacing: 0.04em;">Recurring Volume</div>
+                <div style="display: flex; gap: 4px;">
+                  <span style="font-size: 10px; padding: 1px 6px; border-radius: 4px; color: var(--color-slate);">7D</span>
+                  <span style="font-size: 10px; padding: 1px 6px; border-radius: 4px; background: var(--color-ink); color: #fff; font-weight: 700;">30D</span>
+                  <span style="font-size: 10px; padding: 1px 6px; border-radius: 4px; color: var(--color-slate);">1Y</span>
+                </div>
               </div>
-              <div style="font-size: 22px; font-weight: 700; color: var(--color-ink); margin-top: 4px;">$8.21M</div>
+              <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                <div style="font-size: 22px; font-weight: 700; color: var(--color-ink); letter-spacing: -0.02em;">$8.21M</div>
+                <span style="font-size: 11px; font-weight: 700; color: var(--color-success); background: var(--color-success-bg); padding: 2px 6px; border-radius: 4px;">+24.8% YoY</span>
+              </div>
+              <svg width="100%" height="42" viewBox="0 0 280 42" fill="none" style="overflow: visible; margin-top: 4px;">
+                <defs>
+                  <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#3da2ff" stop-opacity="0.35"/>
+                    <stop offset="100%" stop-color="#3da2ff" stop-opacity="0.0"/>
+                  </linearGradient>
+                  <linearGradient id="brandGradientStroke" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#3da2ff"/>
+                    <stop offset="50%" stop-color="#1971d6"/>
+                    <stop offset="100%" stop-color="#1657a7"/>
+                  </linearGradient>
+                </defs>
+                <path d="M0 36 C40 32, 70 28, 100 20 C130 14, 160 22, 190 12 C220 5, 250 8, 280 2 L280 42 L0 42 Z" fill="url(#chartGrad)"/>
+                <path d="M0 36 C40 32, 70 28, 100 20 C130 14, 160 22, 190 12 C220 5, 250 8, 280 2" stroke="url(#brandGradientStroke)" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="280" cy="2" r="3.5" fill="#1657a7" stroke="#ffffff" stroke-width="1.5"/>
+              </svg>
             </div>
           </div>
           <div class="showcase-info">
