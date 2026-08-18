@@ -184,6 +184,22 @@
 - **Bar Fill:** Default Canonical Gradient (`--gradient-default`: `linear-gradient(140deg, #3da2ff 0%, #1971d6 50%, #1657a7 100%)`).
 - **Thematic Variants:** Emerald (`--gradient-card-emerald`) for savings/positive thresholds; Amber (`--gradient-card-amber`) for budget limits.
 
+### 11. Iconography Architecture & Standards
+- **Vector Base:** 24px × 24px grid (`viewBox="0 0 24 24"`), stroke-based SVG (Lucide / Feather icon family).
+- **Stroke Width:** `2px` standard UI, `1.75px` high-density, `stroke-linecap="round"` and `stroke-linejoin="round"`.
+- **Scale Hierarchy:**
+  - **`16px × 16px` (`--icon-sm`):** Inline status badges, tag prefixes, button icons, table actions.
+  - **`20px × 20px` (`--icon-md`):** Form inputs, navigation menus, list checkpoints.
+  - **`24px × 24px` (`--icon-lg`):** Feature card plates, hero widgets, modal headers.
+- **Icon Plate Geometry & Tints:**
+  - `48px × 48px` circular container (`50%` radius) or `12px` squircle.
+  - **Neutral Paper:** `#f1f5f9` fill, `1px solid #e2e8f0`, `--color-ink` (`#0f172a`) icon stroke.
+  - **Thematic Soft Tints:** Matching soft gradient plate (`--card-tint-*-plate`), matching border (`--card-tint-*-border`), deep accessible chromatic stroke (`--card-tint-*-icon`).
+  - **Saturated Canopies / Cards:** Frosted glass plate (`rgba(255, 255, 255, 0.22)`), `1px solid rgba(255, 255, 255, 0.35)`, `#ffffff` stroke.
+- **Strict Guardrails:**
+  - **No Emojis:** Strictly prohibited in all production UI, buttons, cards, and badges.
+  - **Semantic Directness:** Every icon must relate directly to its concrete functional meaning (Shield = Security, Lightning = Transfers, Chart = Analytics, Wallet = Assets). Never use decorative filler icons (sparkles, flames, rockets).
+
 ---
 
 ## 06 — Border Radius & Elevation
