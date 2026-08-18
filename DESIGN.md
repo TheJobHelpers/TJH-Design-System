@@ -27,7 +27,7 @@
 | Token | Hex | Role | Contrast on White |
 |---|---|---|---|
 | `--color-sapphire-sky` | `#3da2ff` | **Luminous Sky Accent** — Gradient top stop, vibrant highlights, telemetry markers | 2.14:1 (Accents/Dark surfaces) |
-| `--color-electric-azure` | `#1971d6` | **Electric Azure Action** — Gradient mid stop, vibrant interactive buttons, focus rings | 3.86:1 (AA large / UI) |
+| `--color-electric-azure` | `#1971d6` | **Canonical Blue Text & Action** — All blue typography, links, section tags, focus rings, interactive buttons | 3.86:1 (AA large / UI) |
 | `--color-sapphire` | `#1657a7` | **Canonical Brand Anchor** — Primary CTA buttons, active tabs, header elements | 5.38:1 (AAA large, AA normal) |
 | `--color-sapphire-deep` | `#0d386c` | **Hover & Active Action** — Pressed button states, deep canopy contrast | 9.42:1 (AAA) |
 | `--color-glacier` | `#ebf5ff` | **Light Sky Wash** — Icon background plates, active row highlights | — |
