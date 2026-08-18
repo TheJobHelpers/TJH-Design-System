@@ -184,21 +184,25 @@
 - **Bar Fill:** Default Canonical Gradient (`--gradient-default`: `linear-gradient(140deg, #3da2ff 0%, #1971d6 50%, #1657a7 100%)`).
 - **Thematic Variants:** Emerald (`--gradient-card-emerald`) for savings/positive thresholds; Amber (`--gradient-card-amber`) for budget limits.
 
-### 11. Iconography Architecture & Standards
-- **Vector Base:** 24px × 24px grid (`viewBox="0 0 24 24"`), stroke-based SVG (Lucide / Feather icon family).
-- **Stroke Width:** `2px` standard UI, `1.75px` high-density, `stroke-linecap="round"` and `stroke-linejoin="round"`.
+### 11. 3D Tactile Glassmorphic Iconography Architecture
+- **Composition Standard:** Multi-layered 3D tactile SVG vector composition built on a 48px × 48px canvas.
+  - **Base Layer:** 3D squircle plate with rich chromatic gradient fill, inner top specular rim light (`stroke: linear-gradient(180deg, rgba(255,255,255,0.65), transparent)`), and soft elevation drop shadow.
+  - **Core Glyph Layer:** High-contrast dimensional functional icon (Shield, Lightning, AI Spark, Globe, Gauge, Wallet) rendered in solid `#ffffff` or frosted translucent fill (`rgba(255, 255, 255, 0.45)`).
+  - **Tactile Sub-Badge Layer:** Overlapping 3D circular/pill badge positioned at the bottom right (Checkmark, Sync arrows, Radar graph, Mini card, Timer clock, Puzzle connector) casting a micro drop shadow onto the base plate.
 - **Scale Hierarchy:**
   - **`16px × 16px` (`--icon-sm`):** Inline status badges, tag prefixes, button icons, table actions.
   - **`20px × 20px` (`--icon-md`):** Form inputs, navigation menus, list checkpoints.
-  - **`24px × 24px` (`--icon-lg`):** Feature card plates, hero widgets, modal headers.
-- **Icon Plate Geometry & Tints:**
-  - `48px × 48px` circular container (`50%` radius) or `12px` squircle.
-  - **Neutral Paper:** `#f1f5f9` fill, `1px solid #e2e8f0`, `--color-ink` (`#0f172a`) icon stroke.
-  - **Thematic Soft Tints:** Matching soft gradient plate (`--card-tint-*-plate`), matching border (`--card-tint-*-border`), deep accessible chromatic stroke (`--card-tint-*-icon`).
-  - **Saturated Canopies / Cards:** Frosted glass plate (`rgba(255, 255, 255, 0.22)`), `1px solid rgba(255, 255, 255, 0.35)`, `#ffffff` stroke.
+  - **`48px × 48px` (`--icon-plate-lg`):** Feature grid hero cards, prominent product showcase headers.
+- **Thematic Color Formats:**
+  - **Emerald Mint:** `#34d399` ➔ `#059669` plate with checkmark sub-badge.
+  - **Electric Sapphire:** `#3da2ff` ➔ `#1657a7` plate with sync sub-badge.
+  - **Sky Cyan:** `#38bdf8` ➔ `#0369a1` plate with radar telemetry sub-badge.
+  - **Azure Blue:** `#60a5fa` ➔ `#1d4ed8` plate with floating card sub-badge.
+  - **Amber Sunrise:** `#fbbf24` ➔ `#d97706` plate with timer sub-badge.
+  - **Slate Graphite:** `#64748b` ➔ `#334155` plate with puzzle connector sub-badge.
 - **Strict Guardrails:**
-  - **No Emojis:** Strictly prohibited in all production UI, buttons, cards, and badges.
-  - **Semantic Directness:** Every icon must relate directly to its concrete functional meaning (Shield = Security, Lightning = Transfers, Chart = Analytics, Wallet = Assets). Never use decorative filler icons (sparkles, flames, rockets).
+  - **Zero Emojis:** Emojis are strictly forbidden in all product UI, badges, cards, and buttons.
+  - **Functional Semantic Integrity:** Every icon and sub-badge must communicate a concrete financial / system action. No meaningless visual filler.
 
 ---
 

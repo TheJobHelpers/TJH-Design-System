@@ -472,17 +472,26 @@ button:focus-visible,
 }
 
 .feature-icon-plate {
-  width: 48px;
-  height: 48px;
-  background-color: #f1f5f9;
-  border: 1px solid var(--color-mist);
-  border-radius: 50%;
+  width: 58px;
+  height: 58px;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: var(--color-ink);
-  margin-bottom: 24px;
-  transition: background var(--transition-fast), border-color var(--transition-fast);
+  justify-content: flex-start;
+  margin-bottom: 22px;
+  position: relative;
+  transition: transform var(--transition-normal);
+}
+.feature-icon-plate svg {
+  width: 58px;
+  height: 58px;
+  overflow: visible;
+}
+.feature-card:hover .feature-icon-plate {
+  transform: translateY(-2px) scale(1.05);
 }
 .feature-title {
   font-size: 20px;
@@ -561,10 +570,16 @@ button:focus-visible,
     transparent 70%
   );
 }
-.card-color-security .feature-icon-plate {
-  background: var(--card-tint-emerald-plate);
+.card-color-security {
+  background: var(--gradient-soft-emerald);
   border-color: var(--card-tint-emerald-border);
-  color: var(--card-tint-emerald-icon);
+}
+.card-color-security::before {
+  background: radial-gradient(
+    420px circle at var(--mouse-x, -999px) var(--mouse-y, -999px),
+    rgba(16, 185, 129, 0.20),
+    transparent 70%
+  );
 }
 
 .card-color-transfers {
@@ -578,11 +593,6 @@ button:focus-visible,
     transparent 70%
   );
 }
-.card-color-transfers .feature-icon-plate {
-  background: var(--card-tint-sapphire-plate);
-  border-color: var(--card-tint-sapphire-border);
-  color: var(--card-tint-sapphire-icon);
-}
 
 .card-color-ai {
   background: var(--gradient-soft-sky);
@@ -594,11 +604,6 @@ button:focus-visible,
     rgba(6, 182, 212, 0.20),
     transparent 70%
   );
-}
-.card-color-ai .feature-icon-plate {
-  background: var(--card-tint-sky-plate);
-  border-color: var(--card-tint-sky-border);
-  color: var(--card-tint-sky-icon);
 }
 
 .card-color-global {
@@ -612,11 +617,6 @@ button:focus-visible,
     transparent 70%
   );
 }
-.card-color-global .feature-icon-plate {
-  background: var(--card-tint-azure-plate);
-  border-color: var(--card-tint-azure-border);
-  color: var(--card-tint-azure-icon);
-}
 
 .card-color-tracking {
   background: var(--gradient-soft-amber);
@@ -629,11 +629,6 @@ button:focus-visible,
     transparent 70%
   );
 }
-.card-color-tracking .feature-icon-plate {
-  background: var(--card-tint-amber-plate);
-  border-color: var(--card-tint-amber-border);
-  color: var(--card-tint-amber-icon);
-}
 
 .card-color-wallet {
   background: var(--gradient-soft-slate);
@@ -645,11 +640,6 @@ button:focus-visible,
     rgba(71, 85, 105, 0.16),
     transparent 70%
   );
-}
-.card-color-wallet .feature-icon-plate {
-  background: var(--card-tint-slate-plate);
-  border-color: var(--card-tint-slate-border);
-  color: var(--card-tint-slate-icon);
 }
 
 /* Full Vibrant Gradient Mode for All 6 Cards */
@@ -666,11 +656,6 @@ button:focus-visible,
   box-shadow: 0 16px 36px -8px rgba(5, 150, 105, 0.35);
   color: #ffffff;
 }
-.grid-all-gradients .card-color-security .feature-icon-plate {
-  background: rgba(255, 255, 255, 0.22);
-  border-color: rgba(255, 255, 255, 0.35);
-  color: #ffffff;
-}
 .grid-all-gradients .card-color-security .feature-title,
 .grid-all-gradients .card-color-security .feature-text {
   color: #ffffff;
@@ -680,13 +665,6 @@ button:focus-visible,
   background: var(--gradient-card-sapphire);
   border-color: rgba(255, 255, 255, 0.20);
   box-shadow: 0 16px 36px -8px rgba(22, 87, 167, 0.35);
-  color: #ffffff;
-}
-.grid-all-gradients .card-color-transfers .feature-icon-plate {
-  background: rgba(255, 255, 255, 0.22);
-  border-color: rgba(255, 255, 255, 0.35);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
   color: #ffffff;
 }
 .grid-all-gradients .card-color-transfers .feature-title,
@@ -700,11 +678,6 @@ button:focus-visible,
   box-shadow: 0 16px 36px -8px rgba(6, 182, 212, 0.35);
   color: #ffffff;
 }
-.grid-all-gradients .card-color-ai .feature-icon-plate {
-  background: rgba(255, 255, 255, 0.22);
-  border-color: rgba(255, 255, 255, 0.35);
-  color: #ffffff;
-}
 .grid-all-gradients .card-color-ai .feature-title,
 .grid-all-gradients .card-color-ai .feature-text {
   color: #ffffff;
@@ -714,11 +687,6 @@ button:focus-visible,
   background: var(--gradient-card-cobalt);
   border-color: rgba(255, 255, 255, 0.20);
   box-shadow: 0 16px 36px -8px rgba(37, 99, 235, 0.35);
-  color: #ffffff;
-}
-.grid-all-gradients .card-color-global .feature-icon-plate {
-  background: rgba(255, 255, 255, 0.22);
-  border-color: rgba(255, 255, 255, 0.35);
   color: #ffffff;
 }
 .grid-all-gradients .card-color-global .feature-title,
@@ -732,11 +700,6 @@ button:focus-visible,
   box-shadow: 0 16px 36px -8px rgba(217, 119, 6, 0.35);
   color: #ffffff;
 }
-.grid-all-gradients .card-color-tracking .feature-icon-plate {
-  background: rgba(255, 255, 255, 0.22);
-  border-color: rgba(255, 255, 255, 0.35);
-  color: #ffffff;
-}
 .grid-all-gradients .card-color-tracking .feature-title,
 .grid-all-gradients .card-color-tracking .feature-text {
   color: #ffffff;
@@ -746,11 +709,6 @@ button:focus-visible,
   background: var(--gradient-card-slate);
   border-color: rgba(255, 255, 255, 0.20);
   box-shadow: 0 16px 36px -8px rgba(71, 85, 105, 0.35);
-  color: #ffffff;
-}
-.grid-all-gradients .card-color-wallet .feature-icon-plate {
-  background: rgba(255, 255, 255, 0.22);
-  border-color: rgba(255, 255, 255, 0.35);
   color: #ffffff;
 }
 .grid-all-gradients .card-color-wallet .feature-title,
