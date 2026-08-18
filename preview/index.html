@@ -21,6 +21,7 @@
           <ul class="nav-links">
             <li><a href="#colors" class="nav-link">Colors</a></li>
             <li><a href="#typography" class="nav-link">Typography</a></li>
+            <li><a href="#ui-controls" class="nav-link">Controls</a></li>
             <li><a href="#canopy-pattern" class="nav-link">Canopy</a></li>
             <li><a href="#feature-grid" class="nav-link">Grid Cards</a></li>
             <li><a href="#product-showcase" class="nav-link">Showcase</a></li>
@@ -137,6 +138,38 @@
           <div class="swatch-token"><span>#e2e8f0</span><span>--color-mist</span></div>
         </div>
       </div>
+
+      <!-- Thematic Card Gradients -->
+      <h3 style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-slate); margin-bottom: var(--spacing-16);">Content Gradients & Soft Tints</h3>
+      <div class="grid-swatches">
+        <div class="swatch-card" data-hex="Gradient" data-token="--gradient-default">
+          <div class="swatch-color" style="background: var(--gradient-default);"></div>
+          <div class="swatch-name">Canonical Brand</div>
+          <div class="swatch-role">Default Brand Gradient</div>
+          <div class="swatch-token"><span>140deg</span><span>--gradient-default</span></div>
+        </div>
+
+        <div class="swatch-card" data-hex="Gradient" data-token="--gradient-soft-emerald">
+          <div class="swatch-color" style="background: var(--gradient-soft-emerald); border: 1px solid #a7f3d0;"></div>
+          <div class="swatch-name">Soft Emerald</div>
+          <div class="swatch-role">Security & Compliance</div>
+          <div class="swatch-token"><span>145deg</span><span>--gradient-soft-emerald</span></div>
+        </div>
+
+        <div class="swatch-card" data-hex="Gradient" data-token="--gradient-soft-sapphire">
+          <div class="swatch-color" style="background: var(--gradient-soft-sapphire); border: 1px solid #bfdbfe;"></div>
+          <div class="swatch-name">Soft Sapphire</div>
+          <div class="swatch-role">Instant Transfers</div>
+          <div class="swatch-token"><span>145deg</span><span>--gradient-soft-sapphire</span></div>
+        </div>
+
+        <div class="swatch-card" data-hex="Gradient" data-token="--gradient-soft-sky">
+          <div class="swatch-color" style="background: var(--gradient-soft-sky); border: 1px solid #bae6fd;"></div>
+          <div class="swatch-name">Soft Sky Cyan</div>
+          <div class="swatch-role">AI Smart Insights</div>
+          <div class="swatch-token"><span>145deg</span><span>--gradient-soft-sky</span></div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -170,11 +203,89 @@
     </div>
   </section>
 
-  <!-- 03: Saturated Sapphire Hero Canopy Pattern -->
-  <section id="canopy-pattern" class="section">
+  <!-- 03: UI Controls & Atomic Components Workbench -->
+  <section id="ui-controls" class="section">
     <div class="container">
       <div class="section-header">
-        <div class="section-tag">03 — Canopy Pattern</div>
+        <div class="section-tag">03 — UI Controls & Components</div>
+        <h2 class="section-title">Buttons, Inputs & Progress Indicators</h2>
+        <p class="section-desc">Atomic interactive controls featuring 2px focus-visible rings, precision radii, and gradient progress bars.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-24);">
+        <!-- Button Hierarchy Panel -->
+        <div class="feature-card">
+          <h3 style="font-size: 15px; font-weight: 700; color: var(--color-ink); margin-bottom: 16px;">Button Hierarchy & Radii</h3>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 16px;">
+            <button class="btn btn-primary">Primary (12px)</button>
+            <button class="btn btn-secondary">Secondary (12px)</button>
+            <button class="btn btn-primary" disabled>Disabled</button>
+          </div>
+          <div style="background: var(--color-carbon); padding: 16px; border-radius: 12px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
+            <span style="font-size: 11px; color: var(--color-steel); font-weight: 600; text-transform: uppercase;">On Canopy:</span>
+            <button class="btn btn-white btn-pill btn-sm">White Filled</button>
+            <button class="btn btn-glass btn-pill btn-sm">Frosted Glass</button>
+          </div>
+        </div>
+
+        <!-- Inputs & Badges Panel -->
+        <div class="feature-card">
+          <h3 style="font-size: 15px; font-weight: 700; color: var(--color-ink); margin-bottom: 16px;">Inputs & Status Badges</h3>
+          <div style="margin-bottom: 16px;">
+            <input type="text" class="input-control" placeholder="Search accounts, transfers (10px radius)..." value="Standard Input (:focus-visible)" />
+          </div>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center;">
+            <span class="badge badge-brand">Active Azure</span>
+            <span class="badge badge-success">Completed</span>
+            <span class="badge badge-warning">Pending</span>
+            <span class="badge badge-neutral">Archived</span>
+          </div>
+        </div>
+
+        <!-- Gradient Progress Bars Panel -->
+        <div class="feature-card">
+          <h3 style="font-size: 15px; font-weight: 700; color: var(--color-ink); margin-bottom: 16px;">Gradient Progress Bars</h3>
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+            <div>
+              <div style="display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 6px;">
+                <span style="font-weight: 600; color: var(--color-ink);">Canonical Brand Loading Bar</span>
+                <span style="color: var(--color-electric-azure); font-weight: 700;">75%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar" style="width: 75%;"></div>
+              </div>
+            </div>
+
+            <div>
+              <div style="display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 6px;">
+                <span style="font-weight: 600; color: var(--color-ink);">Savings Goal (Emerald)</span>
+                <span style="color: var(--color-success); font-weight: 700;">90%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar progress-bar-emerald" style="width: 90%;"></div>
+              </div>
+            </div>
+
+            <div>
+              <div style="display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 6px;">
+                <span style="font-weight: 600; color: var(--color-ink);">Budget Threshold (Amber)</span>
+                <span style="color: var(--color-warning); font-weight: 700;">45%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar progress-bar-amber" style="width: 45%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04: Saturated Sapphire Hero Canopy Pattern -->
+  <section id="canopy-pattern" class="section" style="background-color: var(--color-paper);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">04 — Canopy Pattern</div>
         <h2 class="section-title">Sapphire Hero Canopy & Floating Widgets</h2>
         <p class="section-desc">Saturated gradient shell with dual pill actions on blue and boundary-breaking floating UI mockups.</p>
       </div>
@@ -215,11 +326,11 @@
     </div>
   </section>
 
-  <!-- 04: Highlighted / Multi-Colored Grid Cards -->
+  <!-- 05: Highlighted / Multi-Colored Grid Cards -->
   <section id="feature-grid" class="section" style="background-color: var(--color-paper);">
     <div class="container">
       <div class="section-header">
-        <div class="section-tag">04 — Feature Grid Pattern</div>
+        <div class="section-tag">05 — Feature Grid Pattern</div>
         <h2 class="section-title">Why People Choose The Platform</h2>
         <p class="section-desc">Demonstrates the 6-card grid where each card has its own distinctive thematic color and icon plate.</p>
         
@@ -289,11 +400,11 @@
     </div>
   </section>
 
-  <!-- 05: Human Proof & Bento Stat Block -->
+  <!-- 06: Human Proof & Bento Stat Block -->
   <section id="proof-bento" class="section">
     <div class="container">
       <div class="section-header">
-        <div class="section-tag">05 — Proof Bento Pattern</div>
+        <div class="section-tag">06 — Proof Bento Pattern</div>
         <h2 class="section-title">Built for Modern Scale</h2>
         <p class="section-desc">Center human focus card overlapped by floating status pill, flanked by 4 quantitative metric cards.</p>
       </div>
@@ -344,11 +455,11 @@
     </div>
   </section>
 
-  <!-- 06: Product Showcase 2x2 Grid -->
+  <!-- 07: Product Showcase 2x2 Grid -->
   <section id="product-showcase" class="section" style="background-color: var(--color-paper);">
     <div class="container">
       <div class="section-header">
-        <div class="section-tag">06 — Product Showcase Grid</div>
+        <div class="section-tag">07 — Product Showcase Grid</div>
         <h2 class="section-title">Powerful Features, Built for Everyday Finance</h2>
         <p class="section-desc">2x2 grid pairing elevated interactive widget mockups with structural copy.</p>
       </div>
@@ -426,11 +537,11 @@
     </div>
   </section>
 
-  <!-- 07: 3-Tier Pricing Component -->
+  <!-- 08: 3-Tier Pricing Component -->
   <section id="pricing-section" class="section">
     <div class="container">
       <div class="section-header" style="text-align: center;">
-        <div class="section-tag">07 — Pricing Grid Pattern</div>
+        <div class="section-tag">08 — Pricing Grid Pattern</div>
         <h2 class="section-title">Simple Pricing for Everyone</h2>
         <p class="section-desc" style="margin: 0 auto;">Transparent plan tiers featuring a Sapphire gradient highlighted Pro tier.</p>
       </div>
@@ -487,7 +598,7 @@
     </div>
   </section>
 
-  <!-- 08: Conversion Canopy Banner -->
+  <!-- 09: Conversion Canopy Banner -->
   <section class="section" style="padding-top: var(--spacing-32);">
     <div class="container">
       <div class="cta-banner-container">
@@ -503,11 +614,11 @@
     </div>
   </section>
 
-  <!-- 09: AI Prompt Recipes Section -->
+  <!-- 10: AI Prompt Recipes Section -->
   <section id="llm-prompts" class="section" style="background-color: var(--color-paper);">
     <div class="container">
       <div class="section-header">
-        <div class="section-tag">09 — AI Agent Recipes</div>
+        <div class="section-tag">10 — AI Agent Recipes</div>
         <h2 class="section-title">Ready-to-Use Prompts for LLM Models</h2>
         <p class="section-desc">Copy and paste these exact recipes when prompting AI models to build website sections.</p>
       </div>

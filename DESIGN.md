@@ -128,7 +128,7 @@
 ### 1. Primary Filled Button (on Light Surfaces)
 - **Fill:** `--color-sapphire` (`#1657a7`)
 - **Text:** `#ffffff`, Inter 15px / 600 weight
-- **Radius:** `12px` (precision UI) or `9999px` (marketing pill)
+- **Radius:** Strictly `12px` (`--radius-button: 12px`) precision radius
 - **Padding:** `12px 24px` (desktop), `10px 20px` (compact)
 - **Hover:** `filter: brightness(0.92)`, `transform: translateY(-1px)`, `box-shadow: 0 4px 14px -2px rgba(22, 87, 167, 0.35)`
 
