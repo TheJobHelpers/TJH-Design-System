@@ -5,11 +5,13 @@
 
 @theme {
   /* Colors */
+  --color-sapphire-sky: #3da2ff;
+  --color-electric-azure: #1971d6;
   --color-sapphire: #1657a7;
   --color-sapphire-deep: #0d386c;
-  --color-azure: #2d7ee8;
-  --color-glacier: #edf4fc;
-  --color-glacier-frost: #f4f8fd;
+  --color-azure: #1971d6;
+  --color-glacier: #ebf5ff;
+  --color-glacier-frost: #f4f9ff;
 
   --color-abyss: #060d17;
   --color-carbon: #0e1726;
@@ -56,17 +58,18 @@
 
 /* ==========================================================================
    Tailwind v3 Config Export Snippet (Copy into tailwind.config.js):
-   ==========================================================================
+   ========================================================================== */
 module.exports = {
   theme: {
     extend: {
       colors: {
         sapphire: {
           DEFAULT: '#1657a7',
+          sky: '#3da2ff',
+          azure: '#1971d6',
           deep: '#0d386c',
-          azure: '#2d7ee8',
-          glacier: '#edf4fc',
-          frost: '#f4f8fd',
+          glacier: '#ebf5ff',
+          frost: '#f4f9ff',
         },
         abyss: '#060d17',
         carbon: '#0e1726',

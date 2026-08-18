@@ -22,15 +22,16 @@
 
 ## 02 — Color System
 
-### Primary & Brand Accents
+### Primary & Brand Accents (Electric Sapphire System)
 
 | Token | Hex | Role | Contrast on White |
 |---|---|---|---|
-| `--color-sapphire` | `#1657a7` | **Primary Brand & Action** — High-intent CTA buttons, active tabs, primary links, focus rings | 5.38:1 (AAA large, AA normal) |
-| `--color-sapphire-deep` | `#0d386c` | **Hover & Active Action** — Pressed button states, dark accent accents | 9.42:1 (AAA) |
-| `--color-azure` | `#2d7ee8` | **Focus & Highlight Ring** — Keyboard focus states, active glow, secondary metric accents | 3.52:1 (AA large / UI) |
-| `--color-glacier` | `#edf4fc` | **Light Accent Wash** — Pill button background tint, icon plates, active row highlights | — |
-| `--color-glacier-frost` | `#f4f8fd` | **Subtle Tinted Surface** — Secondary card backgrounds, search bars | — |
+| `--color-sapphire-sky` | `#3da2ff` | **Luminous Sky Accent** — Gradient top stop, vibrant highlights, telemetry markers | 2.14:1 (Accents/Dark surfaces) |
+| `--color-electric-azure` | `#1971d6` | **Electric Azure Action** — Gradient mid stop, vibrant interactive buttons, focus rings | 3.86:1 (AA large / UI) |
+| `--color-sapphire` | `#1657a7` | **Canonical Brand Anchor** — Primary CTA buttons, active tabs, header elements | 5.38:1 (AAA large, AA normal) |
+| `--color-sapphire-deep` | `#0d386c` | **Hover & Active Action** — Pressed button states, deep canopy contrast | 9.42:1 (AAA) |
+| `--color-glacier` | `#ebf5ff` | **Light Sky Wash** — Icon background plates, active row highlights | — |
+| `--color-glacier-frost` | `#f4f9ff` | **Subtle Tinted Surface** — Secondary card backgrounds, search inputs | — |
 
 ### Gradients & Canopy Surfaces (Default Canonical Gradient)
 

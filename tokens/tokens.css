@@ -5,13 +5,15 @@
 
 :root {
   /* ==========================================================================
-     Colors — Primary & Brand Accents
+     Colors — Primary & Brand Accents (Derived from Electric Sapphire Gradient)
      ========================================================================== */
-  --color-sapphire: #1657a7;
-  --color-sapphire-deep: #0d386c;
-  --color-azure: #2d7ee8;
-  --color-glacier: #edf4fc;
-  --color-glacier-frost: #f4f8fd;
+  --color-sapphire-sky: #3da2ff;       /* Gradient Stop 1: Luminous Accent & Highlight */
+  --color-electric-azure: #1971d6;     /* Gradient Stop 2: Vibrant Action & Focus */
+  --color-sapphire: #1657a7;           /* Gradient Stop 3: Canonical Brand Anchor */
+  --color-sapphire-deep: #0d386c;      /* Deep Canopy & Hover Anchor */
+  --color-azure: #1971d6;              /* Active Action / Focus Ring */
+  --color-glacier: #ebf5ff;            /* Clean Light Sky Wash */
+  --color-glacier-frost: #f4f9ff;      /* Featherlight Tinted Surface */
 
   /* ==========================================================================
      Gradients & Canopy Surfaces (Default: Electric Sapphire)
