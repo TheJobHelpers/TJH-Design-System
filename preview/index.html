@@ -591,41 +591,160 @@
         <div class="bento-grid">
           <!-- Left Column Metrics -->
           <div style="display: flex; flex-direction: column; gap: var(--spacing-16);">
-            <div class="feature-card" style="text-align: center; padding: 20px;">
-              <div style="font-size: 36px; font-weight: 700; color: var(--color-electric-azure); letter-spacing: -0.03em;">500K+</div>
-              <div style="font-size: 13px; font-weight: 600; color: var(--color-ink);">Active Global Accounts</div>
+            <!-- Metric 1: Active Global Accounts (Emerald) -->
+            <div class="bento-metric-card card-color-security">
+              <div class="bento-metric-header">
+                <span class="bento-metric-title">Active Global Accounts</span>
+                <span class="bento-metric-tag" style="background: #dcfce7; color: #047857; border: 1px solid #bbf7d0;">+38% YoY</span>
+              </div>
+              <div class="bento-metric-value" style="color: var(--color-sapphire);">500,000+</div>
+              <div class="bento-micro-bar">
+                <div class="bento-micro-bar-fill bento-micro-bar-fill-emerald" style="width: 78%;"></div>
+              </div>
+              <div class="bento-metric-footer">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-success)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>99.4% Verified Corporate & Personal</span>
+              </div>
             </div>
-            <div class="feature-card" style="text-align: center; padding: 20px;">
-              <div style="font-size: 36px; font-weight: 700; color: var(--color-electric-azure); letter-spacing: -0.03em;">$2.6B</div>
-              <div style="font-size: 13px; font-weight: 600; color: var(--color-ink);">Quarterly Volume</div>
+
+            <!-- Metric 2: Quarterly Volume (Sky Cyan) -->
+            <div class="bento-metric-card card-color-ai">
+              <div class="bento-metric-header">
+                <span class="bento-metric-title">Quarterly Settlement</span>
+                <span class="bento-metric-tag" style="background: var(--color-glacier); color: var(--color-sapphire); border: 1px solid #bfdbfe;">Audited</span>
+              </div>
+              <div class="bento-metric-value">$2.64B</div>
+              <div class="bento-micro-bar">
+                <div class="bento-micro-bar-fill bento-micro-bar-fill-cyan" style="width: 92%;"></div>
+              </div>
+              <div class="bento-metric-footer">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-electric-azure)" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span>~0.4s Instant Settlement Velocity</span>
+              </div>
             </div>
           </div>
 
-          <!-- Center Column Human Focus Card -->
+          <!-- Center Column Human Focus & Live Settlement Card -->
           <div class="bento-photo-card">
-            <div style="text-align: center; padding: 20px;">
-              <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(255,255,255,0.2); margin: 0 auto 12px auto; display: flex; align-items: center; justify-content: center;">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <div>
+                <div style="font-size: 14.5px; font-weight: 700; color: #ffffff; letter-spacing: -0.01em;">Global Settlement Engine</div>
+                <div style="font-size: 11px; color: rgba(255, 255, 255, 0.85); margin-top: 2px;">Real-Time Multi-Currency Clearing</div>
               </div>
-              <div style="font-size: 16px; font-weight: 700;">Human-Centered Reliability</div>
+              <span style="font-size: 11px; font-weight: 700; color: #ffffff; background: rgba(255,255,255,0.18); padding: 3px 10px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.30); letter-spacing: 0.02em;">SOC2 Type II Certified</span>
             </div>
+
+            <div class="bento-stream-node">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; font-size: 11px; color: rgba(255, 255, 255, 0.85); font-weight: 600;">
+                <span>Route: Treasury Vault (US)</span>
+                <span>Rail: FedNow / SEPA Instant</span>
+              </div>
+              <div style="display: flex; align-items: center; justify-content: space-between;">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                  <div style="width: 36px; height: 36px; border-radius: 10px; background: rgba(255,255,255,0.22); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px;">HQ</div>
+                  <div>
+                    <div style="font-size: 12.5px; font-weight: 700; color: #ffffff;">Primary Treasury</div>
+                    <div style="font-size: 11px; color: rgba(255,255,255,0.90);">$4,250.00 USD</div>
+                  </div>
+                </div>
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 2px;">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                  <span style="font-size: 9.5px; font-weight: 700; color: #d1fae5; letter-spacing: 0.02em;">0.4s Instant Clear</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                  <div>
+                    <div style="font-size: 12.5px; font-weight: 700; text-align: right; color: #ffffff;">Merchant Clear</div>
+                    <div style="font-size: 11px; color: rgba(255,255,255,0.90); text-align: right;">€3,912.50 EUR</div>
+                  </div>
+                  <div style="width: 36px; height: 36px; border-radius: 10px; background: rgba(255,255,255,0.22); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px;">TX</div>
+                </div>
+              </div>
+            </div>
+
             <div class="bento-floating-pill">
               <div style="display: flex; justify-content: space-between; align-items: center;">
-                <span>Verified Direct Deposit</span>
-                <span style="font-weight: 700; color: var(--color-success);">+$4,250.00</span>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                  <span style="width: 28px; height: 28px; border-radius: 50%; background: #d1fae5; color: #047857; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  </span>
+                  <div>
+                    <div style="font-size: 12.5px; font-weight: 700; color: var(--color-ink);">Verified Direct Settlement</div>
+                    <div style="font-size: 10.5px; color: var(--color-slate);">Zero Slippage · Auto-Reconciled</div>
+                  </div>
+                </div>
+                <div style="text-align: right;">
+                  <div style="font-size: 14.5px; font-weight: 800; color: var(--color-success);">+$4,250.00</div>
+                  <div style="font-size: 10.5px; color: var(--color-slate); font-weight: 600;">Settled in 0.4s</div>
+                </div>
               </div>
             </div>
           </div>
 
           <!-- Right Column Metrics -->
           <div style="display: flex; flex-direction: column; gap: var(--spacing-16);">
-            <div class="feature-card" style="text-align: center; padding: 20px;">
-              <div style="font-size: 36px; font-weight: 700; color: var(--color-electric-azure); letter-spacing: -0.03em;">4.9 / 5</div>
-              <div style="font-size: 13px; font-weight: 600; color: var(--color-ink);">Client Satisfaction</div>
+            <!-- Metric 3: Client Satisfaction (Amber Sunrise) -->
+            <div class="bento-metric-card card-color-tracking">
+              <div class="bento-metric-header">
+                <span class="bento-metric-title">Client Satisfaction</span>
+                <div style="display: flex; gap: 2px;">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+              </div>
+              <div class="bento-metric-value">4.95 <span style="font-size: 18px; font-weight: 600; color: var(--color-slate);">/ 5</span></div>
+              <div class="bento-micro-bar">
+                <div class="bento-micro-bar-fill bento-micro-bar-fill-amber" style="width: 98%;"></div>
+              </div>
+              <div class="bento-metric-footer">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-slate)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span>24,000+ Verified Enterprise Audits</span>
+              </div>
             </div>
-            <div class="feature-card" style="text-align: center; padding: 20px;">
-              <div style="font-size: 36px; font-weight: 700; color: var(--color-electric-azure); letter-spacing: -0.03em;">120+</div>
-              <div style="font-size: 13px; font-weight: 600; color: var(--color-ink);">Supported Regions</div>
+
+            <!-- Metric 4: Supported Regions (Azure Blue) -->
+            <div class="bento-metric-card card-color-global">
+              <div class="bento-metric-header">
+                <span class="bento-metric-title">Supported Jurisdictions</span>
+                <span class="bento-metric-tag" style="background: #edf5ff; color: #1e40af; border: 1px solid #c7d2fe;">Global Rails</span>
+              </div>
+              <div class="bento-metric-value">140+</div>
+              <div class="bento-micro-bar">
+                <div class="bento-micro-bar-fill bento-micro-bar-fill-azure" style="width: 86%;"></div>
+              </div>
+              <div class="bento-metric-footer">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-electric-azure)" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                <span>38 Fiat Currencies Supported</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Proof Logo Strip -->
+        <div class="bento-proof-strip">
+          <div class="bento-proof-strip-label">Trusted by Leading Global Financial Teams & Enterprises</div>
+          <div class="bento-logos-row">
+            <div class="bento-logo-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+              <span>Acme Capital</span>
+            </div>
+            <div class="bento-logo-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="m9 12 2 2 4-4"/></svg>
+              <span>Finnova Labs</span>
+            </div>
+            <div class="bento-logo-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><path d="m10 15 5-3-5-3v6Z"/></svg>
+              <span>Nexus Pay</span>
+            </div>
+            <div class="bento-logo-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              <span>Vertex Global</span>
+            </div>
+            <div class="bento-logo-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>Orion Audit</span>
             </div>
           </div>
         </div>
