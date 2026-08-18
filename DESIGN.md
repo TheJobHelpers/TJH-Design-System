@@ -29,7 +29,6 @@
 | `--color-sapphire-sky` | `#3da2ff` | **Luminous Sky Accent** — Gradient top stop, vibrant highlights, telemetry markers | 2.14:1 (Accents/Dark surfaces) |
 | `--color-electric-azure` | `#1971d6` | **Canonical Blue Text & Action** — All blue typography, links, section tags, focus rings, interactive buttons | 3.86:1 (AA large / UI) |
 | `--color-sapphire` | `#1657a7` | **Canonical Brand Anchor** — Primary CTA buttons, active tabs, header elements | 5.38:1 (AAA large, AA normal) |
-| `--color-sapphire-deep` | `#0d386c` | **Hover & Active Action** — Pressed button states, deep canopy contrast | 9.42:1 (AAA) |
 | `--color-glacier` | `#ebf5ff` | **Light Sky Wash** — Icon background plates, active row highlights | — |
 | `--color-glacier-frost` | `#f4f9ff` | **Subtle Tinted Surface** — Secondary card backgrounds, search inputs | — |
 
@@ -131,7 +130,7 @@
 - **Text:** `#ffffff`, Inter 15px / 600 weight
 - **Radius:** `12px` (precision UI) or `9999px` (marketing pill)
 - **Padding:** `12px 24px` (desktop), `10px 20px` (compact)
-- **Hover:** Background `--color-sapphire-deep` (`#0d386c`), `transform: translateY(-1px)`, `box-shadow: 0 4px 14px -2px rgba(22, 87, 167, 0.35)`
+- **Hover:** `filter: brightness(0.92)`, `transform: translateY(-1px)`, `box-shadow: 0 4px 14px -2px rgba(22, 87, 167, 0.35)`
 
 ### 2. Dual Buttons on Sapphire Canopy (on Dark / Blue Surfaces)
 - **Primary on Blue:** `#ffffff` fill, `--color-sapphire` (`#1657a7`) text, 9999px pill radius, `box-shadow: 0 4px 14px -2px rgba(0, 0, 0, 0.12)`.

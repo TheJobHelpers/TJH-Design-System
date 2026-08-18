@@ -8,7 +8,6 @@
   --color-sapphire-sky: #3da2ff;
   --color-electric-azure: #1971d6;
   --color-sapphire: #1657a7;
-  --color-sapphire-deep: #0d386c;
   --color-azure: #1971d6;
   --color-glacier: #ebf5ff;
   --color-glacier-frost: #f4f9ff;
@@ -25,17 +24,12 @@
   --color-paper: #ffffff;
 
   --color-success: #059669;
-  --color-success-bg: #ecfdf5;
   --color-warning: #d97706;
-  --color-warning-bg: #fffbeb;
   --color-error: #dc2626;
-  --color-error-bg: #fef2f2;
-  --color-amber-ember: #e07a16;
 
-  /* Fonts */
-  --font-display: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-mono: 'Geist Mono', 'JetBrains Mono', monospace;
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
 
   /* Border Radii */
   --radius-tag: 6px;
@@ -54,6 +48,7 @@
   --shadow-button-primary: 0 4px 14px -2px rgba(22, 87, 167, 0.35);
   --shadow-button-white: 0 4px 14px -2px rgba(0, 0, 0, 0.12);
   --shadow-modal: 0 24px 48px -12px rgba(15, 23, 42, 0.18), 0 8px 16px -4px rgba(15, 23, 42, 0.08);
+  --shadow-focus-ring: 0 0 0 2px #ffffff, 0 0 0 4px #1971d6;
 }
 
 /* ==========================================================================
@@ -67,7 +62,6 @@ module.exports = {
           DEFAULT: '#1657a7',
           sky: '#3da2ff',
           azure: '#1971d6',
-          deep: '#0d386c',
           glacier: '#ebf5ff',
           frost: '#f4f9ff',
         },

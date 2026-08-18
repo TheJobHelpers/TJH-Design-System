@@ -3,7 +3,7 @@
 Shared design foundations, tokens, component recipes, and AI agent guardrails for all **The Job Helpers (TJH)** web products and interfaces.
 
 ![Brand Anchor](https://img.shields.io/badge/Primary_Color-%231657a7-1657a7?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Foundations%20v1.0-0d386c?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Foundations%20v1.0-1657a7?style=flat-square)
 ![Tokens](https://img.shields.io/badge/Tokens-CSS%20%7C%20Tailwind%20%7C%20JSON-060d17?style=flat-square)
 ![AI Ready](https://img.shields.io/badge/LLM%20Ready-AGENTS.md-1657a7?style=flat-square)
 

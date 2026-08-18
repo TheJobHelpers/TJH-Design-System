@@ -268,7 +268,7 @@ button:focus-visible,
   box-shadow: var(--shadow-button-primary);
 }
 .btn-primary:hover {
-  background-color: var(--color-sapphire-deep);
+  filter: brightness(0.92);
   transform: translateY(-1px);
 }
 .btn-primary:active {
