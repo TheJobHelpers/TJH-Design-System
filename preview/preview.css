@@ -592,7 +592,7 @@ body {
 }
 .bento-photo-card {
   position: relative;
-  background: linear-gradient(135deg, #1657a7 0%, #0d386c 100%);
+  background: var(--gradient-default);
   border-radius: var(--radius-card);
   height: 240px;
   display: flex;
@@ -601,6 +601,7 @@ body {
   color: #ffffff;
   font-weight: 600;
   overflow: hidden;
+  box-shadow: 0 12px 28px -6px rgba(22, 87, 167, 0.35);
 }
 .bento-floating-pill {
   position: absolute;

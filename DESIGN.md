@@ -14,7 +14,7 @@
 
 1. **Single Sapphire Voice (`#1657a7`)**: The primary brand sapphire blue is the single chromatic voice on the screen. It commands all high-intent actions, active states, and focal points without becoming decorative wallpaper.
 2. **Clinical Precision Meets Warm Paper Canvas**: Surfaces live on warm, clean paper (`#fafbfc` / `#ffffff`) rather than stark digital glare. Structural depth is created with hairline borders (`#e2e8f0`) and layered secondary surfaces (`#f4f8fd`), not muddy, heavy drop shadows.
-3. **Hard Bookends & Canopy Framing**: The bright body is framed by crisp dark surfaces — a deep Abyss (`#060d17`) footer and saturated Sapphire Hero Canopies (`linear-gradient(180deg, #1657a7 0%, #0d386c 100%)`) — creating a grounded, authoritative presence.
+3. **Hard Bookends & Canopy Framing**: The bright body is framed by crisp dark surfaces — a deep Abyss (`#060d17`) footer and saturated Sapphire Hero Canopies (`linear-gradient(160deg, #3da2ff 0%, #1971d6 45%, #1657a7 100%)`) — creating a grounded, authoritative presence.
 4. **Engineered Typography**: Display typography employs deliberate negative letter-spacing (`-0.02em` to `-0.035em`) and tight line-heights (1.05 to 1.20) for a confident, engineered aesthetic. Body copy utilizes relaxed line-heights (1.50 to 1.60) with slight positive tracking (`+0.01em`) for effortless scanning.
 5. **Anti "Vibe-Coded" Discipline**: No generic purple/violet glows on dark backgrounds, no decorative floating blobs, no icon-stuffed bento boxes with meaningless icons, and no emojis in product UI. Headings use Title Case.
 
@@ -219,7 +219,7 @@
 ### Recipe 1: Saturated Sapphire Hero Canopy
 ```markdown
 Build a Hero Canopy using the TJH Design System:
-- Background: linear-gradient(180deg, #1657a7 0%, #0d386c 100%), rounded bottom corners (28px radius).
+- Background: linear-gradient(140deg, #3da2ff 0%, #1971d6 50%, #1657a7 100%), rounded bottom corners (28px radius).
 - Headline: Centered 56px Inter 700 in #ffffff with -0.035em letter-spacing, Title Case.
 - Subtext: 18px Inter 400 in rgba(255,255,255,0.85), max-width 640px.
 - Action row:
@@ -242,7 +242,7 @@ Build a 2x2 Product Showcase grid using the TJH Design System:
 Build a 3-tier pricing section using the TJH Design System:
 - 3 columns (Starter, Pro, Enterprise), max-width 1200px.
 - Starter & Enterprise: #ffffff fill, 1px solid #e2e8f0 border, 16px radius, #0f172a price, outlined pill button.
-- Pro (Featured): linear-gradient(180deg, #1b63bc 0%, #1657a7 100%) fill, #ffffff text and price, #ffffff filled pill button, "Most Popular" pill badge at top.
+- Pro (Featured): linear-gradient(140deg, #3da2ff 0%, #1971d6 50%, #1657a7 100%) fill, #ffffff text and price, #ffffff filled pill button, "Most Popular" pill badge at top.
 - Feature checklist with 14px text and checked icons.
 ```
 
