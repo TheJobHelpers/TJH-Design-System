@@ -57,6 +57,7 @@ Primary brand anchor: **`#1657a7`** (Sapphire Blue).
    - **No colored border glows:** Cards use 1px hairline borders (`#e2e8f0`) with natural, featherlight soft elevation.
    - **No over-nested cards:** Do not nest rounded containers 3+ levels deep inside one another.
    - **No fake system status badges:** Never inject decorative or fabricated status pills, pulsing operational dots, or artificial uptime badges (e.g. "All Systems Operational", "99.9% Uptime") unless connected to real live monitoring backend.
+   - **No em dashes in titles:** Do not use em dashes (`—`) in site titles, metadata, or headlines. Use pipes (`|`), standard hyphens (`-`), or colons (`:`).
    - **Title Case headings:** All headings, card titles, and button labels must use Title Case.
 
 5. **Respect Known Gaps:**

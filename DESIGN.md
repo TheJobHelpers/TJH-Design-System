@@ -286,6 +286,7 @@ This design system strictly prohibits generic AI aesthetic tropes (the "vibe-cod
 9. **No Over-Nested Cards:** Do not nest rounded containers three or more levels deep inside one another.
 10. **Title Case Headings Required:** All section headings, card titles, and button labels must use Title Case (e.g. *"Instant Transfers"*, not *"Instant transfers"*).
 11. **No Fake System Status Badges ("All Systems Operational"):** Never inject decorative or fabricated status pills, pulsing operational dots, or artificial uptime badges (e.g. "All Systems Operational", "99.9% Uptime", fake telemetry pings) into headers, cards, or footers unless connected to real live backend monitoring infrastructure.
+12. **No Em Dashes in Titles or Headlines:** Do not use em dashes (`—`) in website titles, metadata title strings, or section headlines. Use clean pipes (`|`), standard hyphens (`-`), or colons (`:`) for separator formatting.
 
 ---
 
