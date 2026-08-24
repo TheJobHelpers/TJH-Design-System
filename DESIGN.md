@@ -179,6 +179,7 @@
 ### 9. Watermarked Architectural Footer (`footer-watermark`)
 - **Background:** `--color-abyss` (`#060d17`) or light canvas.
 - **Watermark Element:** Huge subdued brand wordmark rendered in faint contrast (`color: rgba(255, 255, 255, 0.04)` on dark or `rgba(15, 23, 42, 0.04)` on light) spanning the lower background width behind the copyright strip.
+- **Copyright & Legal Strip:** Clean copyright line and legal links only. Never include fake status markers or artificial pulsing operational badges (e.g. "All Systems Operational").
 
 ### 10. Gradient Progress & Loading Bars (`progress-bar`)
 - **Track:** Height `6px` to `8px`, `--color-glacier` (`#ebf5ff`) fill, `9999px` pill border-radius, `overflow: hidden`.
@@ -284,6 +285,7 @@ This design system strictly prohibits generic AI aesthetic tropes (the "vibe-cod
 8. **No Colored Border Glows or Neon Halos:** Cards use clean 1px hairline borders (`#e2e8f0`) with natural, featherlight soft drop elevation — never glowing colored outlines.
 9. **No Over-Nested Cards:** Do not nest rounded containers three or more levels deep inside one another.
 10. **Title Case Headings Required:** All section headings, card titles, and button labels must use Title Case (e.g. *"Instant Transfers"*, not *"Instant transfers"*).
+11. **No Fake System Status Badges ("All Systems Operational"):** Never inject decorative or fabricated status pills, pulsing operational dots, or artificial uptime badges (e.g. "All Systems Operational", "99.9% Uptime", fake telemetry pings) into headers, cards, or footers unless connected to real live backend monitoring infrastructure.
 
 ---
 
